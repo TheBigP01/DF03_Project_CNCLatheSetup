@@ -1,7 +1,6 @@
 {
     "context": {
-        "UnitOfMeasureScale": 0.001,
-        "CameraSpeed": 10,
+        "UnitOfMeasureScale": 1,
         "Zup": false,
         "RepoPath": "https://raw.githubusercontent.com/TheBigP01/DF03_Project_CNCLatheSetup/main/"
     },
