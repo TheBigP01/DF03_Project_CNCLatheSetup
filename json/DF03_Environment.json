@@ -1,6 +1,6 @@
 {
     "context": {
-        "UnitOfMeasureScale": 1,
+        "UnitOfMeasureScale": 0.001,
         "Zup": false,
         "RepoPath": "https://raw.githubusercontent.com/TheBigP01/DF03_Project_CNCLatheSetup/main/"
     },
