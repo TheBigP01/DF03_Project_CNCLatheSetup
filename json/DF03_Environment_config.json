@@ -1,0 +1,8 @@
+{
+    "scene": {
+        "useRightHandedSystem": true
+    },
+    "ground": {
+        "enabled": false
+    }
+}
