@@ -1,1 +1,24 @@
-
+[
+    {
+        "type": "HemisphericLight",
+        "name": "AmbientLight",
+        "intensity": 0.7,
+        "direction": [0, 1, 0],
+        "diffuse": [1, 1, 1],
+        "specular": [0.2, 0.2, 0.2],
+        "groundColor": [0.1, 0.1, 0.1]
+    },
+    {
+        "type": "DirectionalLight",
+        "name": "SunLight",
+        "intensity": 1.5,
+        "direction": [-1, -2, -1],
+        "position": [20, 40, 20],
+        "shadowEnabled": true
+    },
+    {
+        "type": "Skybox",
+        "size": 1000,
+        "texture": "textures/studio.env"
+    }
+]
