@@ -13,7 +13,7 @@
             "position": [ 500, 1600, 500 ],
             "rotation": [ 0, 0, 0 ],
             "speed": 512
-        },
+        }
     ],
     "lights":[
         {
