@@ -3,15 +3,15 @@
         {
             "id": "camera.d1",
             "type": "FlyCamera",
-            "position": [ -6, 10, 6 ],
-            "rotation": [ 0.5, 2.5, 0 ],
+            "position": [ -6, 1200, 6 ],
+            "rotation": [ 1, 2, 0 ],
             "speed": 64
         },
         {
             "id": "camera.d2",
             "type": "FreeCamera",
-            "position": [ 0, 2, 5 ],
-            "rotation": [ 0, 3.14, 0 ],
+            "position": [ 500, 1600, 500 ],
+            "rotation": [ 0, -2, 0 ],
             "speed": 1
         }
     ],
