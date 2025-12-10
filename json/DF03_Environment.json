@@ -13,7 +13,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
-                    "file": "models/Scene/Warehouse.glb",
+                    "file": "Warehouse.glb",
                     "unit": 1
                 }
             ],
