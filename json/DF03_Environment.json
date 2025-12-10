@@ -1,0 +1,27 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": "https://raw.githubusercontent.com/TheBigP01/DF03_Project_CNCLatheSetup/main/"
+    },
+    "scene": [
+        "building"
+    ],
+    "assets": [
+        {
+            "id": "building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "models/Scene/Warehouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}
