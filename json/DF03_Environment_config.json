@@ -1,8 +1,27 @@
 {
-    "scene": {
-        "useRightHandedSystem": true
-    },
-    "ground": {
-        "enabled": false
-    }
+  "endpoint": {
+    "server": "http://digital-factory.io/fuseki",
+    "database": "VLFT",
+    "user": "admin",
+    "psw": "admin"
+  },
+  "repo":{
+    "model3d": "https://difactory.github.io/repository/models/AssemblyLine/GLB/",
+    "animation": "https://difactory.github.io/repository/",
+    "sparqlDir": "https://difactory.github.io/repository/sparql/"
+  },
+  "MQTT":{
+    "broker": "wss://broker.emqx.io:8084/mqtt",
+    "base_topic": "/DF",
+    "QoS": 0
+  },
+  "controller":{
+    "loopInterval": 50
+  },
+  "scene": {
+    "useRightHandedSystem": true
+  },
+  "ground": {
+    "enabled": false
+  }
 }
