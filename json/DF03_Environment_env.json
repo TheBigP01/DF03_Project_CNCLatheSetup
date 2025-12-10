@@ -1,24 +1,42 @@
-[
-    {
-        "type": "HemisphericLight",
-        "name": "AmbientLight",
-        "intensity": 0.7,
-        "direction": [0, 1, 0],
-        "diffuse": [1, 1, 1],
-        "specular": [0.2, 0.2, 0.2],
-        "groundColor": [0.1, 0.1, 0.1]
+{
+    "cameras": [
+        {
+            "id": "camera.d1",
+            "type": "FlyCamera",
+            "position": [ -6, 2, 6 ],
+            "rotation": [ 0.5, 2.5, 0 ],
+            "speed": 64
+        },
+        {
+            "id": "camera.d2",
+            "type": "FreeCamera",
+            "position": [ 0, 2, 5 ],
+            "rotation": [ 0, 3.14, 0 ],
+            "speed": 1
+        }
+    ],
+    "lights":[
+        {
+            "id": "light.0",
+            "type": "HemisphericLight",
+            "direction": [ 1, 0.3, 0.1 ],
+            "intensity": 0.5
+        },
+        {
+            "id": "light.1",
+            "type": "PointLight",
+            "position": [ 0, 5, 0 ],
+            "intensity": 2
+        }
+    ],
+    "shadows": {
+        "darkness": 0.3,
+        "bias": 0.001,
+        "environmentIntensity": 0.3
     },
-    {
-        "type": "DirectionalLight",
-        "name": "SunLight",
-        "intensity": 1.5,
-        "direction": [-1, -2, -1],
-        "position": [20, 40, 20],
-        "shadowEnabled": true
-    },
-    {
-        "type": "Skybox",
-        "size": 1000,
-        "texture": "textures/studio.env"
+    "env": {
+        "skyboxTexture": "textures/studio.env",
+        "backgroundColor": [ 0.2, 0.3, 0.5 ],
+        "groundTexture": ""
     }
-]
+}
