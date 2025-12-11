@@ -31,6 +31,19 @@
             ],
             "position": [ 500, -1230, 500 ],  
             "rotation": [ 0, 0, 0 ]
+        },
+        {
+            "id": "Lathe_Machine2",
+            "descr": "CNC Lathe for Setup Training",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "LatheFullTrial2.glb", 
+                    "unit": 1
+                }
+            ],
+            "position": [ -500, -1230, -500 ],  
+            "rotation": [ 0, 0, 0 ]
         }
     ]
 }
