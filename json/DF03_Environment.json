@@ -5,7 +5,8 @@
         "RepoPath": "https://raw.githubusercontent.com/TheBigP01/DF03_Project_CNCLatheSetup/main/"
     },
     "scene": [
-        "building"
+        "building",
+        "Lathe_Machine2"
     ],
     "assets": [
         {
@@ -30,7 +31,8 @@
                 }
             ],
             "position": [ 500, -1230, 500 ],  
-            "rotation": [ 0, 0, 0 ]
+            "rotation": [ 0, 0, 0 ],
+            "placementRelTo": "building"
         },
         {
             "id": "Lathe_Machine2",
