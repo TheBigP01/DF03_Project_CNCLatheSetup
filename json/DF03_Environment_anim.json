@@ -1,0 +1,42 @@
+{
+    "assets": [
+        {
+            "id": "Door",
+            "states": [
+                {
+                    "name": "Open",
+                    "descr": "The door is currently Open (X=1.228)",
+                    "default": true,
+                    "transitions": [
+                        {
+                            "to": "Closed",
+                            "trigger": { "event": "pick" },
+                            "anim": {
+                                "type": "position",
+                                "axis": "x",
+                                "value": 0.728,
+                                "duration": 2.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Closed",
+                    "descr": "The door is currently Closed (X=0.728)",
+                    "transitions": [
+                        {
+                            "to": "Open",
+                            "trigger": { "event": "pick" },
+                            "anim": {
+                                "type": "position",
+                                "axis": "x",
+                                "value": 1.228,
+                                "duration": 2.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
