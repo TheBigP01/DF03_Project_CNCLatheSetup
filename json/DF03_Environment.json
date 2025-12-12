@@ -6,7 +6,7 @@
     },
     "scene": [
         "building",
-        "Lathe_Machine3"
+        "LatheFullMachine"
     ],
     "assets": [
         {
@@ -21,16 +21,16 @@
             "position": [ 0, -1230, 0 ]
         },
         {
-            "id": "Lathe_Machine3",
+            "id": "LatheFullMachine",
             "descr": "CNC Lathe for Setup Training",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
-                    "file": "LatheFullTrial3.glb", 
+                    "file": "LatheFullMachine.glb", 
                     "unit": 1
                 }
             ],
-            "position": [ -500, -1230, -500 ],  
+            "position": [ -800, -1230, -800 ],  
             "rotation": [ 0, 0, 0 ]
         }
     ]
