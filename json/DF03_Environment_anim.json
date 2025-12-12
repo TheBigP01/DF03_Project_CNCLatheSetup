@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "id": "Door",
+            "id": "SlidingDoor",
             "states": [
                 {
                     "name": "Open",
@@ -14,7 +14,7 @@
                             "anim": {
                                 "type": "position",
                                 "axis": "x",
-                                "value": 0.728,
+                                "value": 1.276,
                                 "duration": 2.0
                             }
                         }
@@ -30,7 +30,7 @@
                             "anim": {
                                 "type": "position",
                                 "axis": "x",
-                                "value": 1.228,
+                                "value": 1.776,
                                 "duration": 2.0
                             }
                         }
