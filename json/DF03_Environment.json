@@ -6,7 +6,8 @@
     },
     "scene": [
         "building",
-        "Lathe_Body"
+        "Lathe_Body",
+        "Door"
     ],
     "assets": [
         {
