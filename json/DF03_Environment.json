@@ -46,7 +46,42 @@
             ],
             "position": [ 0, 0, 0 ], 
             "rotation": [ 0, 0, 0 ],
-            "placementRelTo": "Lathe_Body"
+            "placementRelTo": "Lathe_Body",
+            "properties": {
+                "MotionType": "ANIMATED"
+            },
+            "statechart": {
+                "id": "stDoor",
+                "initial": "Open",
+                "states": {
+                    "Open": {
+                        "on": {
+                            "pick": "Closed"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Door",
+                                "position": [ 0, 0, 0 ],
+                                "duration": 2000
+                            }
+                        ]
+                    },
+                    "Closed": {
+                        "on": {
+                            "pick": "Open"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Door",
+                                "position": [ -500, 0, 0 ],
+                                "duration": 2000
+                            }
+                        ]
+                    }
+                }
+            }
         }
     ]
 }
