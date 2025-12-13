@@ -45,7 +45,7 @@
             ],
             "position": [ 0, 0, 0 ], 
             "rotation": [ 0, 0, 0 ],
-            "parentObject": "Lathe_Body"
+            "placementRelTo": "Lathe_Body"
         }
     ]
 }
