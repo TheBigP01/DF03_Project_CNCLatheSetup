@@ -50,7 +50,7 @@
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
-                "isPickable": true
+                "checkCollisions": false
             },
             "statechart": {
                 "id": "stDoor",
@@ -60,7 +60,8 @@
                         "on": {
                             "pick": "Closed",
                             "click": "Closed",
-                            "grab": "Closed"
+                            "grab": "Closed",
+                            "OBJECT_DETECTED": "Closed"
                         },
                         "entry": [
                             {
@@ -75,7 +76,8 @@
                         "on": {
                             "pick": "Open",
                             "click": "Open",
-                            "grab": "Open"
+                            "grab": "Open",
+                            "OBJECT_DETECTED": "Open"
                         },
                         "entry": [
                             {
