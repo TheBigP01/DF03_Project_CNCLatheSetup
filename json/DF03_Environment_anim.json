@@ -19,7 +19,7 @@
                             "anim": {
                                 "type": "position",
                                 "axis": "x",
-                                "value": 0.728,
+                                "value": -0.5,
                                 "duration": 2.0
                             }
                         }
@@ -35,7 +35,7 @@
                             "anim": {
                                 "type": "position",
                                 "axis": "x",
-                                "value": 1.228,
+                                "value": 0.0,
                                 "duration": 2.0
                             }
                         }
