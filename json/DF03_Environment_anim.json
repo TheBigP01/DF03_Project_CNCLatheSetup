@@ -1,11 +1,15 @@
 {
-    "assets": [
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "RepoAnim": ""
+    },
+    "nodes": [
         {
             "id": "Door",
             "states": [
                 {
                     "name": "Open",
-                    "descr": "The door is currently Open (X=1.228)",
+                    "descr": "The door is currently Open",
                     "default": true,
                     "transitions": [
                         {
@@ -22,7 +26,7 @@
                 },
                 {
                     "name": "Closed",
-                    "descr": "The door is currently Closed (X=0.728)",
+                    "descr": "The door is currently Closed",
                     "transitions": [
                         {
                             "to": "Open",
