@@ -7,7 +7,7 @@
     "scene": [
         "building",
         "Lathe_Body",
-        "SafetyDoor"
+        "Door"
     ],
     "assets": [
         {
@@ -27,7 +27,7 @@
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
-                    "file": "LatheFullMachine.glb", 
+                    "file": "Lathe_Body.glb", 
                     "unit": 1
                 }
             ],
@@ -35,7 +35,7 @@
             "rotation": [ 0, 0, 0 ]
         },
         {
-            "id": "SafetyDoor",
+            "id": "Door",
             "descr": "Interactive Safety Door",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
