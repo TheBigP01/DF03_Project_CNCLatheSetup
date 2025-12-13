@@ -3,45 +3,5 @@
         "UnitOfMeasureScale": 0.001,
         "RepoAnim": ""
     },
-    "nodes": [
-        {
-            "id": "Door",
-            "actions": [],
-            "states": [
-                {
-                    "name": "Open",
-                    "descr": "The door is currently Open",
-                    "default": true,
-                    "transitions": [
-                        {
-                            "to": "Closed",
-                            "trigger": { "event": "pick" },
-                            "anim": {
-                                "type": "position",
-                                "axis": "x",
-                                "value": -0.5,
-                                "duration": 2.0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Closed",
-                    "descr": "The door is currently Closed",
-                    "transitions": [
-                        {
-                            "to": "Open",
-                            "trigger": { "event": "pick" },
-                            "anim": {
-                                "type": "position",
-                                "axis": "x",
-                                "value": 0.0,
-                                "duration": 2.0
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    "nodes": [ ]
 }
