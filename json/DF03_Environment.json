@@ -58,11 +58,10 @@
                 "states": {
                     "Open": {
                         "on": {
-                            "pick": "Closed",
-                            "click": "Closed",
-                            "grab": "Closed",
-                            "OBJECT_DETECTED": "Closed"
-                        },
+                            "trigger": "pressed"
+                        }
+                    },
+                    "pressed": {
                         "entry": [
                             {
                                 "action": "moveTo",
@@ -74,11 +73,10 @@
                     },
                     "Closed": {
                         "on": {
-                            "pick": "Open",
-                            "click": "Open",
-                            "grab": "Open",
-                            "OBJECT_DETECTED": "Open"
+                            "trigger": "pressed"
+                            }
                         },
+                    "pressed": {
                         "entry": [
                             {
                                 "action": "moveTo",
