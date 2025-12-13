@@ -48,7 +48,9 @@
             "rotation": [ 0, 0, 0 ],
             "placementRelTo": "Lathe_Body",
             "properties": {
-                "MotionType": "ANIMATED"
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
             },
             "statechart": {
                 "id": "stDoor",
@@ -58,8 +60,7 @@
                         "on": {
                             "pick": "Closed",
                             "click": "Closed",
-                            "grab": "Closed",
-                            "Grab": "Closed"
+                            "grab": "Closed"
                         },
                         "entry": [
                             {
@@ -74,8 +75,7 @@
                         "on": {
                             "pick": "Open",
                             "click": "Open",
-                            "grab": "Open",
-                            "Grab": "Open"
+                            "grab": "Open"
                         },
                         "entry": [
                             {
