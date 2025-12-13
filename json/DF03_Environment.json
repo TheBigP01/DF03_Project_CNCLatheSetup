@@ -56,7 +56,10 @@
                 "states": {
                     "Open": {
                         "on": {
-                            "pick": "Closed"
+                            "pick": "Closed",
+                            "click": "Closed",
+                            "grab": "Closed",
+                            "Grab": "Closed"
                         },
                         "entry": [
                             {
@@ -69,7 +72,10 @@
                     },
                     "Closed": {
                         "on": {
-                            "pick": "Open"
+                            "pick": "Open",
+                            "click": "Open",
+                            "grab": "Open",
+                            "Grab": "Open"
                         },
                         "entry": [
                             {
