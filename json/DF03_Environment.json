@@ -6,7 +6,7 @@
     },
     "scene": [
         "building",
-        "LatheFullMachine"
+        "Lathe_Body"
     ],
     "assets": [
         {
@@ -21,7 +21,7 @@
             "position": [ 0, -1230, 0 ]
         },
         {
-            "id": "LatheFullMachine",
+            "id": "Lathe_Body",
             "descr": "CNC Lathe for Setup Training",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
@@ -32,6 +32,20 @@
             ],
             "position": [ -800, -1230, -800 ],  
             "rotation": [ 0, 0, 0 ]
+        },
+        {
+            "id": "Door",
+            "descr": "Interactive Safety Door",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Door.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [ 0, 0, 0 ], 
+            "rotation": [ 0, 0, 0 ],
+            "parentObject": "Lathe_Body"
         }
     ]
 }
