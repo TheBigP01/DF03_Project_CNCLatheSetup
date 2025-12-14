@@ -37,7 +37,7 @@
         {
             "id": "Door",
             "descr": "Interactive Safety Door",
-            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Door.glb",
