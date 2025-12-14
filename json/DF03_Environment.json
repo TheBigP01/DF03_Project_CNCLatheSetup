@@ -50,7 +50,8 @@
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
-                "checkCollisions": false
+                "checkCollisions": false,
+                "isPickable": false
             },
             "statechart": {
                 "id": "stDoor",
