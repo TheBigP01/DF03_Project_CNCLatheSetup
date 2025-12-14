@@ -60,7 +60,7 @@
                         "on": {
                             "pick": "Closed",
                             "trigger": "Closed",
-                            "pressed": "Closed",
+                            "selected": "Closed",
                             "grab": "Closed",
                             "click": "Closed",
                             "OBJECT_DETECTED": "Closed"
@@ -78,7 +78,7 @@
                         "on": {
                             "pick": "Open",
                             "trigger": "Open",
-                            "pressed": "Open",
+                            "selected": "Open",
                             "grab": "Open",
                             "click": "Open",
                             "OBJECT_DETECTED": "Open"
