@@ -59,37 +59,43 @@
                 "states": {
                     "Open": {
                         "on": {
-                            "pick": "Closed",
-                            "trigger": "Closed",
-                            "selected": "Closed",
-                            "grab": "Closed",
-                            "click": "Closed",
-                            "OBJECT_DETECTED": "Closed"
+                            "b_button_pressed": "MidOpen", 
+                            "pick": "MidOpen"
                         },
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "Door",
                                 "position": [ 0, 0, 0 ],
-                                "duration": 2000
+                                "duration": 1500
+                            }
+                        ]
+                    },
+                    "MidOpen": {
+                        "on": {
+                            "b_button_pressed": "Closed",
+                            "pick": "Closed"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Door",
+                                "position": [ -250, 0, 0 ], 
+                                "duration": 1500
                             }
                         ]
                     },
                     "Closed": {
                         "on": {
-                            "pick": "Open",
-                            "trigger": "Open",
-                            "selected": "Open",
-                            "grab": "Open",
-                            "click": "Open",
-                            "OBJECT_DETECTED": "Open"
+                            "b_button_pressed": "Open",
+                            "pick": "Open"
                         },
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "Door",
                                 "position": [ -500, 0, 0 ],
-                                "duration": 2000
+                                "duration": 1500
                             }
                         ]
                     }
