@@ -19,7 +19,7 @@
                     "unit": 1
                 }
             ],
-            "position": [ 0, -1230, 0 ]
+            "position": [0, -1230, 0]
         },
         {
             "id": "Lathe_Body",
@@ -27,12 +27,12 @@
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
-                    "file": "Lathe_Body.glb", 
+                    "file": "Lathe_Body.glb",
                     "unit": 1
                 }
             ],
-            "position": [ -800, -1230, -800 ],  
-            "rotation": [ 0, 0, 0 ]
+            "position": [-800, -1230, -800],
+            "rotation": [0, 0, 0]
         },
         {
             "id": "Door",
@@ -44,8 +44,8 @@
                     "unit": 1
                 }
             ],
-            "position": [ 0, 0, 0 ], 
-            "rotation": [ 0, 0, 0 ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
             "placementRelTo": "Lathe_Body",
             "properties": {
                 "MotionType": "ANIMATED",
@@ -59,42 +59,56 @@
                 "states": {
                     "Open": {
                         "on": {
-                            "b_button_pressed": "MidOpen", 
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
                             "pick": "MidOpen"
                         },
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "Door",
-                                "position": [ 0, 0, 0 ],
+                                "position": [0, 0, 0],
                                 "duration": 1500
                             }
                         ]
                     },
                     "MidOpen": {
                         "on": {
-                            "b_button_pressed": "Closed",
+                            "a-button_pressed": "Closed",
                             "pick": "Closed"
                         },
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "Door",
-                                "position": [ -250, 0, 0 ], 
+                                "position": [-250, 0, 0],
                                 "duration": 1500
                             }
                         ]
                     },
                     "Closed": {
                         "on": {
-                            "b_button_pressed": "Open",
+                            "x-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
                             "pick": "Open"
                         },
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "Door",
-                                "position": [ -500, 0, 0 ],
+                                "position": [-500, 0, 0],
                                 "duration": 1500
                             }
                         ]
