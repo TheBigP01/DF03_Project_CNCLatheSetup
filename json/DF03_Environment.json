@@ -80,7 +80,14 @@
                     },
                     "MidOpen": {
                         "on": {
-                            "a-button_pressed": "Closed",
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
                             "pick": "Closed"
                         },
                         "entry": [
@@ -94,7 +101,7 @@
                     },
                     "Closed": {
                         "on": {
-                            "x-button_pressed": {
+                            "b-button_pressed": {
                                 "actions": [
                                     {
                                         "type": "xstate.raise",
