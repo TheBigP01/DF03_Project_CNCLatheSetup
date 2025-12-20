@@ -40,6 +40,10 @@ Model Name: lathe tool
 Author: Ilie Maftean
 Link: https://grabcad.com/library/lathe-tool-3
 
+Model Name: boor met morse conus, drill bit with morse cone
+Author: Robbert Timmer
+Link: https://grabcad.com/library/boor-met-morse-conus-drill-bit-with-morse-cone-1
+
 ------Models from Sketchfab------
 
 Model Name: safety vest
@@ -53,6 +57,10 @@ Link: https://sketchfab.com/3d-models/sitesafe-black-safety-boot-2018-44490f1f77
 Model Name: Glasses
 Author: vinigor
 Link: https://sketchfab.com/3d-models/glasses-c3d6459e82d647bf990ff05173d9aecb
+
+Model Name: Workbench
+Author: Eric Wallbank
+Link: https://sketchfab.com/3d-models/workbench-d649c10c586c43438392a1dc965937ba
 
 Model Name:
 Author:
