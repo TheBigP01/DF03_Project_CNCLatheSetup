@@ -62,6 +62,10 @@ Model Name: Workbench
 Author: Eric Wallbank
 Link: https://sketchfab.com/3d-models/workbench-d649c10c586c43438392a1dc965937ba
 
+Model Name: Wooden hook rack
+Author: Sousinho
+Link: https://sketchfab.com/3d-models/wooden-hook-rack-b7928bccdd1344b79c0b67e7a9878016
+
 Model Name:
 Author:
 Link:
