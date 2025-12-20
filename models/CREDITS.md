@@ -42,16 +42,17 @@ Link: https://grabcad.com/library/lathe-tool-3
 
 ------Models from Sketchfab------
 
-Model Name: Vest
-Author: WCG847
-Link: https://sketchfab.com/3d-models/vest-11c11ed5479d41dc81d93ff8a320474f
+Model Name: safety vest
+Author: teacherap123
+Link: https://sketchfab.com/3d-models/safety-vest-8510a33da89a41cea6150b2af4d10df0
 
 Model Name: Sitesafe black safety boot 2018
 Author: 3DGate Photogrammetry
 Link: https://sketchfab.com/3d-models/sitesafe-black-safety-boot-2018-44490f1f77ff4ce4a7da5306c1359a65
 
-
-
+Model Name: Glasses
+Author: vinigor
+Link: https://sketchfab.com/3d-models/glasses-c3d6459e82d647bf990ff05173d9aecb
 
 Model Name:
 Author:
