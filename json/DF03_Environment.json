@@ -149,7 +149,61 @@
             ],
             "position": [0, 0, -0.05],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom"
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "checkCollisions": false,
+                "isPickable": false
+            },
+            "statechart": {
+                "id": "stVest",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "SafetyVest",
+                                "position": [0, 0, -0.05],
+                                "duration": 10
+                            }
+                        ]
+                    },
+                    "Closed": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "NotEquipped"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "SafetyVest",
+                                "position": [0, -5000, -0.05],
+                                "duration": 10
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "Lathe_Body",
