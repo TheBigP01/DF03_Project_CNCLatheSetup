@@ -53,7 +53,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "MetalDoor",
@@ -67,13 +67,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "MetalDoorAndFrame",
-            "properties": {
-                "MotionType": "ANIMATED",
-                "isTrigger": true,
-                "checkCollisions": false,
-                "isPickable": false
-            }
+            "placementRelTo": "MetalDoorAndFrame"
         },
         {
             "id": "PlankHooks",
@@ -86,7 +80,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "Workbench",
@@ -99,7 +93,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyEarplugs",
@@ -113,13 +107,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
-            "properties": {
-                "MotionType": "ANIMATED",
-                "isTrigger": true,
-                "checkCollisions": false,
-                "isPickable": false
-            }
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyGlasses",
@@ -133,13 +121,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
-            "properties": {
-                "MotionType": "ANIMATED",
-                "isTrigger": true,
-                "checkCollisions": false,
-                "isPickable": false
-            }
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyShoes",
@@ -153,13 +135,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
-            "properties": {
-                "MotionType": "ANIMATED",
-                "isTrigger": true,
-                "checkCollisions": false,
-                "isPickable": false
-            }
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyVest",
@@ -173,13 +149,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
-            "properties": {
-                "MotionType": "ANIMATED",
-                "isTrigger": true,
-                "checkCollisions": false,
-                "isPickable": false
-            }
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "Lathe_Body",
