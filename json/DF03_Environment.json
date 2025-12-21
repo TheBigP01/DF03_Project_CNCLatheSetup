@@ -7,7 +7,8 @@
     "scene": [
         "building",
         "Lathe_Body",
-        "Door"
+        "Door",
+        "SpawnRoom"
     ],
     "assets": [
         {
@@ -20,6 +21,18 @@
                 }
             ],
             "position": [0, -1230, 0]
+        },
+        {
+            "id": "SpawnRoom",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "SpawnRoom.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [11200, -1230, 9850],
+            "rotation": [0, 0, 0]
         },
         {
             "id": "Lathe_Body",
@@ -67,35 +80,14 @@
                                     }
                                 ]
                             },
-                            "pick": "MidOpen"
-                        },
-                        "entry": [
-                            {
-                                "action": "moveTo",
-                                "target": "Door",
-                                "position": [0, 0, 0],
-                                "duration": 1500
-                            }
-                        ]
-                    },
-                    "MidOpen": {
-                        "on": {
-                            "b-button_pressed": {
-                                "actions": [
-                                    {
-                                        "type": "xstate.raise",
-                                        "event": "pick"
-                                    }
-                                ]
-                            },
                             "pick": "Closed"
                         },
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "Door",
-                                "position": [-250, 0, 0],
-                                "duration": 1500
+                                "position": [0, 0, 0],
+                                "duration": 2000
                             }
                         ]
                     },
@@ -116,7 +108,7 @@
                                 "action": "moveTo",
                                 "target": "Door",
                                 "position": [-500, 0, 0],
-                                "duration": 1500
+                                "duration": 2000
                             }
                         ]
                     }
