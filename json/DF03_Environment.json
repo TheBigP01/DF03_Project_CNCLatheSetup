@@ -78,7 +78,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, 0.05],
+            "position": [0, 0, -0.05],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom"
         },
@@ -147,7 +147,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, 0.05],
+            "position": [0, 0, -0.05],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom"
         },
