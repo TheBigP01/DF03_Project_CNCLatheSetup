@@ -3,7 +3,7 @@
         {
             "id": "camera.d1",
             "type": "FlyCamera",
-            "position": [ 8620, 70, 7600 ],
+            "position": [ 10750, 70, 7000 ],
             "rotation": [ 0, 180, 0 ],
             "speed": 256
         },
