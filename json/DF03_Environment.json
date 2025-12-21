@@ -8,7 +8,15 @@
         "building",
         "Lathe_Body",
         "Door",
-        "SpawnRoom"
+        "SpawnRoom",
+        "MetalDoorAndFrame",
+        "MetalDoor",
+        "PlankHooks",
+        "Workbench",
+        "SafetyEarplugs",
+        "SafetyGlasses",
+        "SafetyShoes",
+        "SafetyVest"
     ],
     "assets": [
         {
@@ -33,6 +41,145 @@
             ],
             "position": [11200, -1230, 9850],
             "rotation": [0, 0, 0]
+        },
+        {
+            "id": "MetalDoorAndFrame",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "MetalDoorAndFrame.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+        },
+        {
+            "id": "MetalDoor",
+            "descr": "Interactive Metal Door",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "MetalDoor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "MetalDoorAndFrame",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "checkCollisions": false,
+                "isPickable": false
+            }
+        },
+        {
+            "id": "PlankHooks",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "PlankHooks.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+        },
+        {
+            "id": "Workbench",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "WorkbenchCompressed.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+        },
+        {
+            "id": "SafetyEarplugs",
+            "descr": "Interactive Safety Earplugs",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyEarplugs.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "checkCollisions": false,
+                "isPickable": false
+            }
+        },
+        {
+            "id": "SafetyGlasses",
+            "descr": "Interactive Safety Glasses",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyGlasses.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "checkCollisions": false,
+                "isPickable": false
+            }
+        },
+        {
+            "id": "SafetyShoes",
+            "descr": "Interactive Safety Shoes",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyShoes.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "checkCollisions": false,
+                "isPickable": false
+            }
+        },
+        {
+            "id": "SafetyVest",
+            "descr": "Interactive Safety Vest",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyVest.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "checkCollisions": false,
+                "isPickable": false
+            }
         },
         {
             "id": "Lathe_Body",
