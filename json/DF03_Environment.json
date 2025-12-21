@@ -78,7 +78,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, -0.05],
+            "position": [0, 0, -1],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom"
         },
@@ -147,7 +147,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, -0.05],
+            "position": [0, 0, -0.5],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom",
             "properties": {
@@ -157,7 +157,7 @@
                 "isPickable": false
             },
             "statechart": {
-                "id": "stVest",
+                "id": "stSafetyVest",
                 "initial": "NotEquipped",
                 "states": {
                     "NotEquipped": {
@@ -176,12 +176,12 @@
                             {
                                 "action": "moveTo",
                                 "target": "SafetyVest",
-                                "position": [0, 0, -0.05],
+                                "position": [0, 0, -0.5],
                                 "duration": 10
                             }
                         ]
                     },
-                    "Closed": {
+                    "Equipped": {
                         "on": {
                             "b-button_pressed": {
                                 "actions": [
@@ -197,7 +197,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "SafetyVest",
-                                "position": [0, -5000, -0.05],
+                                "position": [0, -5000, -0.5],
                                 "duration": 10
                             }
                         ]
