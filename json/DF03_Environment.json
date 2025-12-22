@@ -7,7 +7,7 @@
     "scene": [
         "building",
         "SpawnRoom",
-        "Metalframe",
+        "Frame",
         "Metaldoor",
         "PlankHooks",
         "Workbench",
@@ -43,7 +43,7 @@
             "rotation": [0, 0, 0]
         },
         {
-            "id": "Metalframe",
+            "id": "Frame",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
