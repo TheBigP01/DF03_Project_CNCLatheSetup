@@ -43,7 +43,7 @@
             "rotation": [0, 0, 0]
         },
         {
-            "id": "SpawnDoor",
+            "id": "MetalFrame",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
@@ -67,7 +67,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnDoor",
+            "placementRelTo": "SpawnRoom",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
