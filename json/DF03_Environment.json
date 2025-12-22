@@ -6,8 +6,8 @@
     },
     "scene": [
         "building",
-        "ASpawnRoom",
-        "MetalDoorAndFrame",
+        "SpawnRoom",
+        "SpawnDoor",
         "MetalDoor",
         "PlankHooks",
         "Workbench",
@@ -31,7 +31,7 @@
             "position": [0, -1230, 0]
         },
         {
-            "id": "ASpawnRoom",
+            "id": "SpawnRoom",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
@@ -43,17 +43,17 @@
             "rotation": [0, 0, 0]
         },
         {
-            "id": "MetalDoorAndFrame",
+            "id": "SpawnDoor",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
-                    "file": "MetalDoorAndFrame.glb",
+                    "file": "MetalFrame.glb",
                     "unit": 1
                 }
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom"
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "MetalDoor",
@@ -67,7 +67,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "MetalDoorAndFrame",
+            "placementRelTo": "SpawnDoor",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
@@ -134,7 +134,7 @@
             ],
             "position": [0, 0, -50],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom"
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "Workbench",
@@ -147,7 +147,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom"
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyEarplugs",
@@ -161,7 +161,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom"
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyGlasses",
@@ -175,7 +175,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom"
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "SafetyShoes",
@@ -189,10 +189,10 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom"
+            "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "ASafetyVest",
+            "id": "SafetyVest",
             "descr": "Interactive Safety Vest",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -203,7 +203,7 @@
             ],
             "position": [0, 0, -50],
             "rotation": [0, 0, 0],
-            "placementRelTo": "ASpawnRoom",
+            "placementRelTo": "SpawnRoom",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
@@ -228,7 +228,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "ASafetyVest",
+                                "target": "SafetyVest",
                                 "position": [0, 0, -50],
                                 "duration": 2000
                             }
@@ -249,7 +249,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "ASafetyVest",
+                                "target": "SafetyVest",
                                 "position": [0, -5000, -50],
                                 "duration": 2000
                             }
