@@ -131,7 +131,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, -5000],
+            "position": [0, 0, -50],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom"
         },
