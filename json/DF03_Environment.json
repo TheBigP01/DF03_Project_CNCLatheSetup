@@ -67,7 +67,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom",
+            "placementRelTo": "Frame",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
@@ -115,7 +115,7 @@
                                 "action": "moveTo",
                                 "target": "Metaldoor",
                                 "position": [240, 225, 0],
-                                "rotation": [0, 0, -90],
+                                "rotation": [0, 0, 0],
                                 "duration": 2000
                             }
                         ]
@@ -230,7 +230,7 @@
                                 "action": "moveTo",
                                 "target": "Vest",
                                 "position": [0, 0, -50],
-                                "duration": 2000
+                                "duration": 100
                             }
                         ]
                     },
@@ -251,7 +251,7 @@
                                 "action": "moveTo",
                                 "target": "Vest",
                                 "position": [0, -5000, -50],
-                                "duration": 2000
+                                "duration": 100
                             }
                         ]
                     }
