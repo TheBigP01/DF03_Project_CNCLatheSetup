@@ -70,7 +70,8 @@
             "placementRelTo": "MetalDoorAndFrame",
             "properties": {
                 "MotionType": "ANIMATED",
-                "isTrigger": true
+                "isTrigger": true,
+                "isPickable": true
             },
             "statechart": {
                 "id": "stMetalDoor",
@@ -205,7 +206,8 @@
             "placementRelTo": "SpawnRoom",
             "properties": {
                 "MotionType": "ANIMATED",
-                "isTrigger": true
+                "isTrigger": true,
+                "isPickable": true
             },
             "statechart": {
                 "id": "stSafetyVest",
@@ -284,7 +286,8 @@
             "placementRelTo": "Lathe_Body",
             "properties": {
                 "MotionType": "ANIMATED",
-                "isTrigger": true
+                "isTrigger": true,
+                "isPickable": true
             },
             "statechart": {
                 "id": "stDoor",
