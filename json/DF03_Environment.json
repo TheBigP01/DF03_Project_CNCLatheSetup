@@ -32,7 +32,7 @@
         },
         {
             "id": "SpawnRoom",
-            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
                     "file": "SpawnRoom.glb",
@@ -200,7 +200,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, -5000],
+            "position": [0, 0, -50],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom",
             "properties": {
@@ -227,7 +227,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "SafetyVest",
-                                "position": [0, 0, -5000],
+                                "position": [0, 0, -50],
                                 "duration": 2000
                             }
                         ]
@@ -248,7 +248,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "SafetyVest",
-                                "position": [0, -10000, -5000],
+                                "position": [0, -5000, -50],
                                 "duration": 2000
                             }
                         ]
