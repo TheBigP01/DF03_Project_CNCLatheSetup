@@ -6,7 +6,7 @@
     },
     "scene": [
         "building",
-        "SpawnRoom",
+        "ASpawnRoom",
         "MetalDoorAndFrame",
         "MetalDoor",
         "PlankHooks",
@@ -31,7 +31,7 @@
             "position": [0, -1230, 0]
         },
         {
-            "id": "SpawnRoom",
+            "id": "ASpawnRoom",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
