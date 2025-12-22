@@ -14,7 +14,7 @@
         "SafetyEarplugs",
         "SafetyGlasses",
         "SafetyShoes",
-        "SafetyVest",
+        "ASafetyVest",
         "Lathe_Body",
         "Door"
     ],
@@ -192,7 +192,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "SafetyVest",
+            "id": "ASafetyVest",
             "descr": "Interactive Safety Vest",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -228,7 +228,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "SafetyVest",
+                                "target": "ASafetyVest",
                                 "position": [0, 0, -50],
                                 "duration": 2000
                             }
@@ -249,7 +249,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "SafetyVest",
+                                "target": "ASafetyVest",
                                 "position": [0, -5000, -50],
                                 "duration": 2000
                             }
