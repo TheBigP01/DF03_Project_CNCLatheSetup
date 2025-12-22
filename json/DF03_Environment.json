@@ -6,8 +6,6 @@
     },
     "scene": [
         "building",
-        "Lathe_Body",
-        "Door",
         "SpawnRoom",
         "MetalDoorAndFrame",
         "MetalDoor",
@@ -16,7 +14,9 @@
         "SafetyEarplugs",
         "SafetyGlasses",
         "SafetyShoes",
-        "SafetyVest"
+        "SafetyVest",
+        "Lathe_Body",
+        "Door"
     ],
     "assets": [
         {
@@ -131,7 +131,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, -5, 0],
+            "position": [0, 0, -5000],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom"
         },
@@ -200,7 +200,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, -1, 0],
+            "position": [0, 0, -5000],
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom",
             "properties": {
@@ -227,8 +227,8 @@
                             {
                                 "action": "moveTo",
                                 "target": "SafetyVest",
-                                "position": [0, -1, 0],
-                                "duration": 500
+                                "position": [0, 0, -5000],
+                                "duration": 2000
                             }
                         ]
                     },
@@ -248,8 +248,8 @@
                             {
                                 "action": "moveTo",
                                 "target": "SafetyVest",
-                                "position": [0, -1, -1000],
-                                "duration": 500
+                                "position": [0, -10000, -5000],
+                                "duration": 2000
                             }
                         ]
                     }
