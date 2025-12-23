@@ -5,7 +5,7 @@
         "RepoPath": "https://raw.githubusercontent.com/TheBigP01/DF03_Project_CNCLatheSetup/main/"
     },
     "scene": [
-        "building",
+        "Building",
         "SpawnRoom",
         "Frame",
         "Metaldoor",
@@ -23,7 +23,7 @@
     ],
     "assets": [
         {
-            "id": "building",
+            "id": "Building",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
