@@ -228,17 +228,6 @@
                         }
                     },
                     "Equipped": {
-                        "on": {
-                            "b-button_pressed": {
-                                "actions": [
-                                    {
-                                        "type": "xstate.raise",
-                                        "event": "pick"
-                                    }
-                                ]
-                            },
-                            "pick": "NotEquipped"
-                        },
                         "entry": [
                             {
                                 "action": "moveTo",
