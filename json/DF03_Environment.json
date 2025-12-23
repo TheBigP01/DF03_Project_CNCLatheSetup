@@ -7,14 +7,14 @@
     "scene": [
         "building",
         "SpawnRoom",
-        "Frame",
-        "Metaldoor",
+        "MetalFrame",
+        "MetalDoor",
         "PlankHooks",
         "Workbench",
-        "Earplugs",
-        "Glasses",
-        "Shoes",
-        "Vest",
+        "SafetyEarplugs",
+        "SafetyGlasses",
+        "SafetyShoes",
+        "SafetyVest",
         "Lathe_Body",
         "Door"
     ],
@@ -43,7 +43,7 @@
             "rotation": [0, 0, 0]
         },
         {
-            "id": "Frame",
+            "id": "MetalFrame",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
@@ -56,7 +56,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "Metaldoor",
+            "id": "MetalDoor",
             "descr": "Interactive Metal Door",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -67,14 +67,14 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "Frame",
+            "placementRelTo": "MetalFrame",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
                 "isPickable": true
             },
             "statechart": {
-                "id": "stMetaldoor",
+                "id": "stMetalDoor",
                 "initial": "Closed",
                 "states": {
                     "Closed": {
@@ -92,7 +92,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "Metaldoor",
+                                "target": "MetalDoor",
                                 "position": [0, 0, 0],
                                 "rotation": [0, 0, 0],
                                 "duration": 10
@@ -114,7 +114,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "Metaldoor",
+                                "target": "MetalDoor",
                                 "position": [-6740, 0, 1740],
                                 "rotation": [0, 4.712346, 0],
                                 "duration": 10
@@ -151,7 +151,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "Earplugs",
+            "id": "SafetyEarplugs",
             "descr": "Interactive Safety Earplugs",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -165,7 +165,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "Glasses",
+            "id": "SafetyGlasses",
             "descr": "Interactive Safety Glasses",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -179,7 +179,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "Shoes",
+            "id": "SafetyShoes",
             "descr": "Interactive Safety Shoes",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -193,7 +193,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "Vest",
+            "id": "SafetyVest",
             "descr": "Interactive Safety Vest",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -211,7 +211,7 @@
                 "isPickable": true
             },
             "statechart": {
-                "id": "stVest",
+                "id": "stSafetyVest",
                 "initial": "NotEquipped",
                 "states": {
                     "NotEquipped": {
@@ -228,10 +228,21 @@
                         }
                     },
                     "Equipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "NotEquipped"
+                        },
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "Vest",
+                                "target": "SafetyVest",
                                 "position": [0, -5000, -50],
                                 "duration": 500
                             }
