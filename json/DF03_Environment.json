@@ -384,8 +384,8 @@
                             {
                                 "action": "moveTo",
                                 "target": "WelcomeText",
-                                "position": [0, 0, 500],
-                                "duration": 500
+                                "position": [0, -5000, 500],
+                                "duration": 10
                             }
                         ]
                     }
