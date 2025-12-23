@@ -162,7 +162,41 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom"
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stEarplugs",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Earplugs",
+                                "position": [0, -5000, 0],
+                                "duration": 500
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "Glasses",
@@ -176,7 +210,41 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom"
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stGlasses",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Glasses",
+                                "position": [0, -5000, 0],
+                                "duration": 500
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "Shoes",
@@ -190,7 +258,41 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "SpawnRoom"
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stShoes",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Shoes",
+                                "position": [0, -5000, 0],
+                                "duration": 500
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "Vest",
