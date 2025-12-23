@@ -114,8 +114,8 @@
                             {
                                 "action": "moveTo",
                                 "target": "Metaldoor",
-                                "position": [240, 225, 0],
-                                "rotation": [0, 0, 0],
+                                "position": [-6740, 0, 1740],
+                                "rotation": [0, 270, 0],
                                 "duration": 2000
                             }
                         ]
@@ -224,28 +224,9 @@
                                 ]
                             },
                             "pick": "Equipped"
-                        },
-                        "entry": [
-                            {
-                                "action": "moveTo",
-                                "target": "Vest",
-                                "position": [0, 0, -50],
-                                "duration": 100
-                            }
-                        ]
+                        }
                     },
                     "Equipped": {
-                        "on": {
-                            "b-button_pressed": {
-                                "actions": [
-                                    {
-                                        "type": "xstate.raise",
-                                        "event": "pick"
-                                    }
-                                ]
-                            },
-                            "pick": "NotEquipped"
-                        },
                         "entry": [
                             {
                                 "action": "moveTo",
