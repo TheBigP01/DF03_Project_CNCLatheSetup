@@ -7,14 +7,14 @@
     "scene": [
         "building",
         "SpawnRoom",
-        "MetalFrame",
-        "MetalDoor",
+        "Frame",
+        "Metaldoor",
         "PlankHooks",
         "Workbench",
-        "SafetyEarplugs",
-        "SafetyGlasses",
-        "SafetyShoes",
-        "SafetyVest",
+        "Earplugs",
+        "Glasses",
+        "Shoes",
+        "Vest",
         "Lathe_Body",
         "Door"
     ],
@@ -43,7 +43,7 @@
             "rotation": [0, 0, 0]
         },
         {
-            "id": "MetalFrame",
+            "id": "Frame",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
@@ -56,7 +56,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "MetalDoor",
+            "id": "Metaldoor",
             "descr": "Interactive Metal Door",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -67,14 +67,14 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "MetalFrame",
+            "placementRelTo": "Frame",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
                 "isPickable": true
             },
             "statechart": {
-                "id": "stMetalDoor",
+                "id": "stMetaldoor",
                 "initial": "Closed",
                 "states": {
                     "Closed": {
@@ -92,7 +92,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "MetalDoor",
+                                "target": "Metaldoor",
                                 "position": [0, 0, 0],
                                 "rotation": [0, 0, 0],
                                 "duration": 10
@@ -114,7 +114,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "MetalDoor",
+                                "target": "Metaldoor",
                                 "position": [-6740, 0, 1740],
                                 "rotation": [0, 4.712346, 0],
                                 "duration": 10
@@ -151,7 +151,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "SafetyEarplugs",
+            "id": "Earplugs",
             "descr": "Interactive Safety Earplugs",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -165,7 +165,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "SafetyGlasses",
+            "id": "Glasses",
             "descr": "Interactive Safety Glasses",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -179,7 +179,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "SafetyShoes",
+            "id": "Shoes",
             "descr": "Interactive Safety Shoes",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -193,7 +193,7 @@
             "placementRelTo": "SpawnRoom"
         },
         {
-            "id": "SafetyVest",
+            "id": "Vest",
             "descr": "Interactive Safety Vest",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -211,7 +211,7 @@
                 "isPickable": true
             },
             "statechart": {
-                "id": "stSafetyVest",
+                "id": "stVest",
                 "initial": "NotEquipped",
                 "states": {
                     "NotEquipped": {
@@ -231,7 +231,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "SafetyVest",
+                                "target": "Vest",
                                 "position": [0, -5000, -50],
                                 "duration": 500
                             }
