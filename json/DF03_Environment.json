@@ -15,6 +15,9 @@
         "Glasses",
         "Shoes",
         "Vest",
+        "Computer",
+        "WelcomeText",
+        "FirstPanel",
         "Lathe_Body",
         "Door"
     ],
@@ -341,6 +344,79 @@
                     }
                 }
             }
+        },
+        {
+            "id": "Computer",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Computer.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stComputer",
+                "initial": "Welcome",
+                "states": {
+                    "Welcome": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "FirstTask"
+                        }
+                    },
+                    "FirstTask": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "WelcomeText",
+                                "position": [0, 0, -5000],
+                                "duration": 500
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "WelcomeText",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "WelcomeText.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "Computer"
+        },
+        {
+            "id": "FirstPanel",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FirstPanel.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "Computer"
         },
         {
             "id": "Lathe_Body",
