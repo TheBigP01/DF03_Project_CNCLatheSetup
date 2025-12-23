@@ -116,7 +116,7 @@
                                 "target": "Metaldoor",
                                 "position": [-6740, 0, 1740],
                                 "rotation": [0, 4.712346, 0],
-                                "duration": 2000
+                                "duration": 10
                             }
                         ]
                     }
@@ -232,7 +232,7 @@
                                 "action": "moveTo",
                                 "target": "Vest",
                                 "position": [0, -5000, -50],
-                                "duration": 100
+                                "duration": 500
                             }
                         ]
                     }
