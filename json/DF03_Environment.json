@@ -94,7 +94,8 @@
                                 "action": "moveTo",
                                 "target": "Metaldoor",
                                 "position": [0, 0, 0],
-                                "duration": 2000
+                                "rotation": [0, 0, 0],
+                                "duration": 10
                             }
                         ]
                     },
