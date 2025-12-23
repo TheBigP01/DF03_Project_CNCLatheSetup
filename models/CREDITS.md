@@ -70,6 +70,10 @@ Model Name: Metal Door 2
 Author: tboiston
 Link: https://sketchfab.com/3d-models/metal-door-2-4da6b538427244aaababe36d3e228a40
 
+Model Name: Desktop Computer
+Author: Tytan
+Link: https://sketchfab.com/3d-models/desktop-computer-561abc2fc95941609fc7bc6f232895c2
+
 Model Name:
 Author:
 Link:
