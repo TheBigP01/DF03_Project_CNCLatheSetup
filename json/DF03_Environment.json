@@ -455,8 +455,6 @@
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
-                "isPickable": true,
-                "opacity": 0.0
             },
             "statechart": {
                 "id": "stGuardDoor",
