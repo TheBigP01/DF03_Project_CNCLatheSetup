@@ -442,7 +442,7 @@
         {
             "id": "GuardDoor",
             "descr": "Prevents users to open the metal door before equipping their PPE",
-            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "GuardDoor.glb",
@@ -453,7 +453,9 @@
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom",
             "properties": {
-                "MotionType": "ANIMATED"
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
             },
             "statechart": {
                 "id": "stGuardDoor",
