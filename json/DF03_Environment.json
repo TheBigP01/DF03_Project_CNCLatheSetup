@@ -19,7 +19,7 @@
         "WelcomeText",
         "FirstPanel",
         "GuardDoor",
-        "Lathe_Body",
+        "LatheBody",
         "Door"
     ],
     "assets": [
@@ -480,7 +480,7 @@
             }
         },
         {
-            "id": "Lathe_Body",
+            "id": "LatheBody",
             "descr": "CNC Lathe for Setup Training",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
@@ -504,7 +504,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "Lathe_Body",
+            "placementRelTo": "LatheBody",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
