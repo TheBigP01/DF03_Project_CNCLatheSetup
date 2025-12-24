@@ -442,7 +442,7 @@
         {
             "id": "GuardDoor",
             "descr": "Prevents users to open the metal door before equipping their PPE",
-            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
                     "file": "GuardDoor.glb",
