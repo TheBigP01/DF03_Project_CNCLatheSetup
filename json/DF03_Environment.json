@@ -18,6 +18,7 @@
         "Computer",
         "WelcomeText",
         "FirstPanel",
+        "GuardDoor",
         "Lathe_Body",
         "Door"
     ],
@@ -195,6 +196,11 @@
                                 "target": "Earplugs",
                                 "position": [0, -5000, 0],
                                 "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
                             }
                         ]
                     }
@@ -243,6 +249,11 @@
                                 "target": "Glasses",
                                 "position": [0, -5000, 0],
                                 "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
                             }
                         ]
                     }
@@ -291,6 +302,11 @@
                                 "target": "Shoes",
                                 "position": [0, -5000, 0],
                                 "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
                             }
                         ]
                     }
@@ -339,6 +355,11 @@
                                 "target": "Vest",
                                 "position": [0, -5000, -50],
                                 "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
                             }
                         ]
                     }
@@ -417,6 +438,46 @@
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
             "placementRelTo": "Computer"
+        },
+        {
+            "id": "GuardDoor",
+            "descr": "Prevents users to open the metal door before equipping their PPE",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "GuardDoor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true,
+                "opacity": 0.2
+            },
+            "statechart": {
+                "id": "stGuardDoor",
+                "initial": "Locked_4",
+                "states": {
+                    "Locked_4": { "on": { "PPE_EQUIPPED": "Locked_3" } },
+                    "Locked_3": { "on": { "PPE_EQUIPPED": "Locked_2" } },
+                    "Locked_2": { "on": { "PPE_EQUIPPED": "Locked_1" } },
+                    "Locked_1": { "on": { "PPE_EQUIPPED": "Unlocked" } },
+                    "Unlocked": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "GuardDoor",
+                                "position": [0, -5000, 0],
+                                "duration": 10
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "Lathe_Body",
