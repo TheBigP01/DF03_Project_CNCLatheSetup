@@ -453,8 +453,7 @@
             "rotation": [0, 0, 0],
             "placementRelTo": "SpawnRoom",
             "properties": {
-                "MotionType": "ANIMATED",
-                "isTrigger": true
+                "MotionType": "ANIMATED"
             },
             "statechart": {
                 "id": "stGuardDoor",
