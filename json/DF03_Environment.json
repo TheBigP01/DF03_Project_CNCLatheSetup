@@ -19,6 +19,7 @@
         "WelcomeText",
         "FirstPanel",
         "GuardDoor",
+        "ScenarioPanelSecond",
         "LatheBody",
         "Door"
     ],
@@ -477,6 +478,19 @@
                     }
                 }
             }
+        },
+        {
+            "id": "ScenarioPanelSecond",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "ScenarioPanelSecond.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom"
         },
         {
             "id": "LatheBody",
