@@ -44,6 +44,10 @@ Model Name: boor met morse conus, drill bit with morse cone
 Author: Robbert Timmer
 Link: https://grabcad.com/library/boor-met-morse-conus-drill-bit-with-morse-cone-1
 
+Model Name: Eaton main switch P1-25-M4-SVB - switch
+Author: Rockin' Robin
+Link: https://grabcad.com/library/main-power-switch
+
 ------Models from Sketchfab------
 
 Model Name: safety vest
