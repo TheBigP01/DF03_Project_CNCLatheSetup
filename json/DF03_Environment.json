@@ -565,7 +565,8 @@
                             {
                                 "action": "moveTo",
                                 "target": "KnobMainSwitch.KnobMainSwitch",
-                                "rotation": [0, 180, 0],
+                                "position": [0.250, 1, 0.001],
+                                "rotation": [0, 1, 0],
                                 "duration": 3000
                             }
                         ]
