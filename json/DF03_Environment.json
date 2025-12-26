@@ -583,7 +583,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, -5000],
+            "position": [0, 0, -10],
             "rotation": [0, 0, 0],
             "placementRelTo": "LatheBody",
             "properties": {
@@ -613,7 +613,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "E_Stop.E_StopAssembly",
-                                "position": [0.029, 1.156, 1.81],
+                                "position": [8410, 1336.336, 1638.05],
                                 "rotation": [-0.087266, 0, 5.235987742],
                                 "duration": 3000
                             }
