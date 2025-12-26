@@ -575,6 +575,52 @@
             }
         },
         {
+            "id": "OnButtonHMI",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "OnButtonHMI.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stOnButtonHMI",
+                "initial": "OFF",
+                "states": {
+                    "Pressed": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "ON"
+                        }
+                    },
+                    "ON": {
+                        "entry": [
+                            {
+                                "action": "sendEvent",
+                                "target": "POWER_ON",
+                                "targetStatechart": "stScreenHMI_Off"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
             "id": "E_Stop",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
@@ -616,7 +662,57 @@
                                 "position": [29, 1156, 1810],
                                 "rotation": [-0.087266, 0, 5.235987742],
                                 "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "ESTOP_RELEASED",
+                                "targetStatechart": "stScreenHMI_Off"
                             }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "ScreenHMI_Off",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                { 
+                    "file": "Screen_Off.glb",
+                    "unit": 1 
+                }
+            ],
+            "position": [0, 0, 0],
+            "placementRelTo": "Lathe_Body",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stScreenHMI_Off",
+                "initial": "Off",
+                "states": {
+                    "Off": {
+                        "on": { "POWER_ON": "Booting" }
+                    },
+                    "Booting": {
+                        "entry": [
+                            { "action": "setRepresentation", "reprref": "ScreenHMI_Boot.glb" }
+                        ],
+                        "after": {
+                            "3000": "WaitingForEStop"
+                        }
+                    },
+                    "WaitingForEStop": {
+                        "entry": [
+                            { "action": "setRepresentation", "reprref": "Screen_Estop.glb" }
+                        ],
+                        "on": { "ESTOP_RELEASED": "Ready" }
+                    },
+                    "Ready": {
+                        "entry": [
+                            { "action": "setRepresentation", "reprref": "Screen_Ready.glb" }
                         ]
                     }
                 }
