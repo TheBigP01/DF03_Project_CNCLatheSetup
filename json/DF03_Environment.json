@@ -567,7 +567,7 @@
                                 "target": "KnobMainSwitch.KnobMainSwitch",
                                 "position": [250, 1000, 1],
                                 "rotation": [0, 3.1415915, 0],
-                                "duration": 3000
+                                "duration": 10
                             }
                         ]
                     }
@@ -615,7 +615,7 @@
                                 "target": "E_Stop.E_StopAssembly",
                                 "position": [29, 1156, 1810],
                                 "rotation": [-0.087266, 0, 5.235987742],
-                                "duration": 3000
+                                "duration": 2000
                             }
                         ]
                     }
