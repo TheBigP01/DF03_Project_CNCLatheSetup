@@ -21,6 +21,14 @@
         "GuardDoor",
         "ScenarioPanelSecond",
         "LatheBody",
+        "MainSwitch",
+        "KnobMainSwitch",
+        "E_Stop",
+        "OnButtonHMI",
+        "ScreenHMI_Off",
+        "ScreenHMI_Boot",
+        "ScreenHMI_Estop",
+        "ScreenHMI_Ready",
         "Door"
     ],
     "assets": [
@@ -504,6 +512,45 @@
             ],
             "position": [-800, -1230, -800],
             "rotation": [0, 0, 0]
+        },
+        {
+            "id": "MainSwitch",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "MainSwitch.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "KnobMainSwitch",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "KnobMainSwitch.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "MainSwitch"
+        },
+        {
+            "id": "E_Stop",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "E_Stop.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "HMI_bottom"
         },
         {
             "id": "Door",
