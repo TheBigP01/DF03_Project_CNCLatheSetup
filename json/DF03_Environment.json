@@ -565,7 +565,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "KnobMainSwitch.KnobMainSwitch",
-                                "position": [6250, 1000, 0.1],
+                                "position": [250, 1000, 1],
                                 "rotation": [0, 3.1415915, 0],
                                 "duration": 3000
                             }
@@ -613,7 +613,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "E_Stop.E_StopAssembly",
-                                "position": [8410, 1336.336, 1638.05],
+                                "position": [29, 1156, 1810],
                                 "rotation": [-0.087266, 0, 5.235987742],
                                 "duration": 3000
                             }
