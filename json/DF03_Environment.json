@@ -25,10 +25,7 @@
         "KnobMainSwitch",
         "E_Stop",
         "OnButtonHMI",
-        "ScreenHMI_Off",
-        "ScreenHMI_Boot",
-        "ScreenHMI_Estop",
-        "ScreenHMI_Ready",
+        "HmiDisplay",
         "Door"
     ],
     "assets": [
@@ -613,7 +610,7 @@
                             {
                                 "action": "sendEvent",
                                 "target": "POWER_ON",
-                                "targetStatechart": "stScreenHMI_Off"
+                                "targetStatechart": "stHmiDisplay"
                             }
                         ]
                     }
@@ -666,7 +663,7 @@
                             {
                                 "action": "sendEvent",
                                 "target": "ESTOP_RELEASED",
-                                "targetStatechart": "stScreenHMI_Off"
+                                "targetStatechart": "stHmiDisplay"
                             }
                         ]
                     }
@@ -674,11 +671,11 @@
             }
         },
         {
-            "id": "ScreenHMI_Off",
+            "id": "HmiDisplay",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 { 
-                    "file": "Screen_Off.glb",
+                    "file": "ScreenHMI_Off.glb",
                     "unit": 1 
                 }
             ],
@@ -690,7 +687,7 @@
                 "isPickable": true
             },
             "statechart": {
-                "id": "stScreenHMI_Off",
+                "id": "stHmiDisplay",
                 "initial": "Off",
                 "states": {
                     "Off": {
@@ -698,7 +695,11 @@
                     },
                     "Booting": {
                         "entry": [
-                            { "action": "setRepresentation", "reprref": "ScreenHMI_Boot.glb" }
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Boot.glb" 
+                            }
                         ],
                         "after": {
                             "3000": "WaitingForEStop"
@@ -706,13 +707,21 @@
                     },
                     "WaitingForEStop": {
                         "entry": [
-                            { "action": "setRepresentation", "reprref": "Screen_Estop.glb" }
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Estop.glb" 
+                            }
                         ],
                         "on": { "ESTOP_RELEASED": "Ready" }
                     },
                     "Ready": {
                         "entry": [
-                            { "action": "setRepresentation", "reprref": "Screen_Ready.glb" }
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Ready.glb" 
+                            }
                         ]
                     }
                 }
