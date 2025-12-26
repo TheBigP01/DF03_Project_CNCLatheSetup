@@ -702,7 +702,7 @@
                             }
                         ],
                         "after": {
-                            "3000": "WaitingForEStop"
+                            "6000": "WaitingForEStop"
                         }
                     },
                     "WaitingForEStop": {
