@@ -683,7 +683,7 @@
                 }
             ],
             "position": [0, 0, 0],
-            "placementRelTo": "Lathe_Body",
+            "placementRelTo": "LatheBody",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger": true,
