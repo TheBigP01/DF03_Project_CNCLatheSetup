@@ -592,7 +592,7 @@
                 "id": "stOnButtonHMI",
                 "initial": "OFF",
                 "states": {
-                    "Pressed": {
+                    "OFF": {
                         "on": {
                             "b-button_pressed": {
                                 "actions": [
@@ -648,10 +648,10 @@
                                     }
                                 ]
                             },
-                            "pick": "UnPressed"
+                            "pick": "Released"
                         }
                     },
-                    "UnPressed": {
+                    "Released": {
                         "entry": [
                             {
                                 "action": "moveTo",
