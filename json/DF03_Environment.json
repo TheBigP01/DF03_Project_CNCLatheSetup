@@ -564,8 +564,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "KnobMainEvent",
-                                "position": [0, 0, 0],
+                                "target": "KnobMainSwitch.KnobMainSwitch",
                                 "rotation": [0, 180, 0],
                                 "duration": 3000
                             }
