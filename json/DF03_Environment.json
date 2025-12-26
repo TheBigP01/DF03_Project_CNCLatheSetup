@@ -537,7 +537,42 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "MainSwitch"
+            "placementRelTo": "MainSwitch",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stKnobMainSwitch",
+                "initial": "OFF",
+                "states": {
+                    "OFF": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "ON"
+                        }
+                    },
+                    "ON": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "KnobMainEvent",
+                                "position": [0, 0, 0],
+                                "rotation": [0, 180, 0],
+                                "duration": 3000
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "E_Stop",
