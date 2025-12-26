@@ -585,7 +585,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "LatheBody.HMI_bottom"
+            "placementRelTo": "LatheBody"
         },
         {
             "id": "Door",
