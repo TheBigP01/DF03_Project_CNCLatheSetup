@@ -583,9 +583,44 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, 0],
+            "position": [0, 0, -5],
             "rotation": [0, 0, 0],
-            "placementRelTo": "LatheBody"
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stE_Stop",
+                "initial": "Pressed",
+                "states": {
+                    "Pressed": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "UnPressed"
+                        }
+                    },
+                    "UnPressed": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "E_Stop.E_StopAssembly",
+                                "position": [0.029, 1.156, 1.81],
+                                "rotation": [1, 0, 300],
+                                "duration": 3000
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "Door",
