@@ -78,10 +78,13 @@ Model Name: Desktop Computer
 Author: Tytan
 Link: https://sketchfab.com/3d-models/desktop-computer-561abc2fc95941609fc7bc6f232895c2
 
-------Image from Sketchfab------
+------Images from Vecteezy------
 
-<a href="https://www.vecteezy.com/free-png/power-icon">Power Icon PNGs by Vecteezy</a>
+Model Name: Power button icon on flat shape
+Author: vect ara
+Link: https://www.vecteezy.com/png/60380339-power-button-icon-on-flat-shape
 
 Model Name:
 Author:
 Link:
+
