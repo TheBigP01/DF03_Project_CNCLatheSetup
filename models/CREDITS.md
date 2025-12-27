@@ -48,6 +48,10 @@ Model Name: Eaton main switch P1-25-M4-SVB - switch
 Author: Rockin' Robin
 Link: https://grabcad.com/library/main-power-switch
 
+Model Name: Protected voltage foot pedal
+Author: Гонтар Петро 
+Link: https://grabcad.com/library/protected-voltage-foot-pedal-1
+
 ------Models from Sketchfab------
 
 Model Name: safety vest
@@ -78,9 +82,9 @@ Model Name: Desktop Computer
 Author: Tytan
 Link: https://sketchfab.com/3d-models/desktop-computer-561abc2fc95941609fc7bc6f232895c2
 
-Model Name: Protected voltage foot pedal
-Author: Гонтар Петро 
-Link: https://grabcad.com/library/protected-voltage-foot-pedal-1
+Model Name: Allen/Hex Key Set 10 - 1.5 mm
+Author: yarankepang
+Link: https://sketchfab.com/3d-models/allenhex-key-set-10-15-mm-5d468ae574b84d9c86dd049575c9dc6a
 
 ------Images from Vecteezy------
 
