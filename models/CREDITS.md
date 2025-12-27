@@ -78,6 +78,10 @@ Model Name: Desktop Computer
 Author: Tytan
 Link: https://sketchfab.com/3d-models/desktop-computer-561abc2fc95941609fc7bc6f232895c2
 
+Model Name: Protected voltage foot pedal
+Author: Гонтар Петро 
+Link: https://grabcad.com/library/protected-voltage-foot-pedal-1
+
 ------Images from Vecteezy------
 
 Model Name: Power button icon on flat shape
@@ -90,5 +94,5 @@ Link: https://www.vecteezy.com/photo/4836372-getting-back-to-the-start-again-aft
 
 Model Name:
 Author:
-Link:
+Link: 
 
