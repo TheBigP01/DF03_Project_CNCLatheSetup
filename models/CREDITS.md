@@ -86,6 +86,10 @@ Model Name: Allen/Hex Key Set 10 - 1.5 mm
 Author: yarankepang
 Link: https://sketchfab.com/3d-models/allenhex-key-set-10-15-mm-5d468ae574b84d9c86dd049575c9dc6a
 
+Model Name: Digital Measuring Caliper (Preciva)
+Author: AleixoAlonso
+Link: https://sketchfab.com/3d-models/digital-measuring-caliper-preciva-37f189663fb64847829c6f42cf95e90a
+
 ------Images from Vecteezy------
 
 Model Name: Power button icon on flat shape
