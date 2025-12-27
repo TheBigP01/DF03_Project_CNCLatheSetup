@@ -26,7 +26,11 @@
         "E_Stop",
         "OnButtonHMI",
         "HmiDisplay",
-        "Door"
+        "Door",
+        "FootPedalLeft",
+        "FootPedalRight",
+        "WorkTable",
+        "RawBar"
     ],
     "assets": [
         {
@@ -793,6 +797,60 @@
                     }
                 }
             }
+        },
+        {
+            "id": "FootPedalLeft",
+            "descr": "Interactive Foot Pedal to open the Jaws of the chuck",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FootPedalLeft.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "FootPedalRight",
+            "descr": "Interactive Foot Pedal to close the Jaws of the chuck",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FootPedalRight.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "WorkTable",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "WorkTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "RawBar",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "RawBar.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "WorkTable"
         }
     ]
 }
