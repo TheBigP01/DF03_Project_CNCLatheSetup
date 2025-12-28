@@ -30,7 +30,8 @@
         "FootPedalLeft",
         "FootPedalRight",
         "WorkTable",
-        "RawBar"
+        "RawBar",
+        "RawBar2"
     ],
     "assets": [
         {
@@ -851,6 +852,19 @@
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
             "placementRelTo": "WorkTable"
+        },
+        {
+            "id": "RawBar2",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "RawBar2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
         }
     ]
 }
