@@ -819,9 +819,9 @@
             },
             "statechart": {
                 "id": "stFootPedalLeft",
-                "initial": "UnToggled",
+                "initial": "UnToggledLeft",
                 "states": {
-                    "UnToggled": {
+                    "UnToggledLeft": {
                         "on": {
                             "b-button_pressed": {
                                 "actions": [
@@ -831,10 +831,10 @@
                                     }
                                 ]
                             },
-                            "pick": "Toggled"
+                            "pick": "ToggledLeft"
                         }
                     },
-                    "Toggled": {
+                    "ToggledLeft": {
                         "entry": [
                             {
                                 "action": "moveTo",
@@ -856,6 +856,11 @@
                                 "position": [-50, 0, 2],
                                 "rotation": [1.570795765, -1.570795765, 0],
                                 "duration": 4000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "UnToggledRight",
+                                "targetStatechart": "stFootPedalRight"
                             }
                         ]
                     }
@@ -882,9 +887,9 @@
             },
             "statechart": {
                 "id": "stFootPedalRight",
-                "initial": "UnToggled",
+                "initial": "UnToggledRight",
                 "states": {
-                    "UnToggled": {
+                    "UnToggledRight": {
                         "on": {
                             "b-button_pressed": {
                                 "actions": [
@@ -894,31 +899,36 @@
                                     }
                                 ]
                             },
-                            "pick": "Toggled"
+                            "pick": "ToggledRight"
                         }
                     },
-                    "Toggled": {
+                    "ToggledRight": {
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_1",
-                                "position": [-50, 5, -3],
+                                "position": [-100, 10, -6],
                                 "rotation": [-0.523598588, 0, 1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_2",
-                                "position": [-50, -5, -4],
+                                "position": [-100, -10, -8],
                                 "rotation": [-0.523598588, -3.14159153, -1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_3",
-                                "position": [-50, 0, 7],
+                                "position": [-100, 0, 14],
                                 "rotation": [1.570795765, -1.570795765, 0],
                                 "duration": 4000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "UnToggledLeft",
+                                "targetStatechart": "stFootPedalLeft"
                             }
                         ]
                     }
