@@ -1049,23 +1049,19 @@
             "placementRelTo": "LatheBody",
             "properties": {
                 "isPickable": true,
+                "isTrigger" : true,
                 "SnapPosition": [0, 0, 0], 
                 "SnapRotation": [0, 0, 0] 
             },
             "statechart": {
                 "id": "stSnapZone",
-                "initial": "active", 
+                "initial": "inactive",
                 "states": {
-                    "active": {
-                        "on": { 
-                            "deactivate": "inactive",
-                            "activate": "active"
-                            }
-                    },
                     "inactive": {
-                        "on": { 
-                            "activate": "active" 
-                        }
+                        "on": { "activate": "active" }
+                    },
+                    "active": {
+                        "on": { "deactivate": "inactive" }
                     }
                 }
             }
