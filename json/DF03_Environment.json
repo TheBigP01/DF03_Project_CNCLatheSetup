@@ -547,8 +547,22 @@
             },
             "statechart": {
                 "id": "stKnobMainSwitch",
-                "initial": "OFF",
+                "initial": "ResetAnimation",
                 "states": {
+                    "ResetAnimation": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "KnobMainSwitch.KnobMainSwitch",
+                                "position": [250, 1000, 1],
+                                "rotation": [0, 3.14159153, 3.159044817],
+                                "duration": 10
+                            }
+                            ],
+                        "after": {
+                            "1000": "OFF"
+                        }
+                    },
                     "OFF": {
                         "on": {
                             "b-button_pressed": {
@@ -568,8 +582,8 @@
                                 "action": "moveTo",
                                 "target": "KnobMainSwitch.KnobMainSwitch",
                                 "position": [250, 1000, 1],
-                                "rotation": [0, 3.1415915, 0],
-                                "duration": 10
+                                "rotation": [0, 3.14159153, 0],
+                                "duration": 2000
                             }
                         ]
                     }
@@ -616,6 +630,11 @@
                                 "action": "sendEvent",
                                 "target": "POWER_ON",
                                 "targetStatechart": "stHmiDisplay"
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "HMI_ON",
+                                "targetStatechart": "stE_Stop"
                             }
                         ]
                     }
@@ -641,8 +660,13 @@
             },
             "statechart": {
                 "id": "stE_Stop",
-                "initial": "Pressed",
+                "initial": "WaitingHMI",
                 "states": {
+                    "WaitingHMI": {
+                        "on": { 
+                            "HMI_ON": "Pressed" 
+                        }
+                    },
                     "Pressed": {
                         "on": {
                             "b-button_pressed": {
