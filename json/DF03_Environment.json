@@ -1057,8 +1057,10 @@
                 "initial": "active", 
                 "states": {
                     "active": {
-                        "on": { "deactivate": "inactive" }
-                    },
+                        "on": { 
+                            "deactivate": "inactive",
+                            "activate": "active"
+                            },
                     "inactive": {
                         "on": { "activate": "active" }
                     }
