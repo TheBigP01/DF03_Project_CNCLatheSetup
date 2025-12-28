@@ -41,11 +41,7 @@
     },
 	"physics": {
 		"engine": "havok",
-		"gravity": [
-			0,
-			-9.81,
-			0
-		],
+		"gravity": [ 0, -9.81, 0 ],
 		"viewer": false
 	}
 }
