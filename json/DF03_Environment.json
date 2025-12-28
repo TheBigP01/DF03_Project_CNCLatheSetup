@@ -808,7 +808,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, 0],
+            "position": [0, 50, 0],
             "rotation": [0, 0, 0],
             "placementRelTo": "LatheBody"
         },
@@ -822,7 +822,7 @@
                     "unit": 1
                 }
             ],
-            "position": [0, 0, 0],
+            "position": [0, 50, 0],
             "rotation": [0, 0, 0],
             "placementRelTo": "LatheBody"
         },
