@@ -1050,7 +1050,7 @@
             "properties": {
                 "isPickable": true,
                 "SnapPosition": [0, 0, 0], 
-                "SnapRotation": [0, 0, 1.570795765] 
+                "SnapRotation": [0, 0, 0] 
             },
             "statechart": {
                 "id": "stSnapZone",
