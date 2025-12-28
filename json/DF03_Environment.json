@@ -840,18 +840,21 @@
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_1",
                                 "position": [-50, 2, -1],
+                                "rotation": [-0.523598588, 0, 1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_2",
                                 "position": [-50, -1, -1],
+                                "rotation": [-0.523598588, -3.14159153, -1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_3",
                                 "position": [-50, 0, 2],
+                                "rotation": [1.570795765, -1.570795765, 0],
                                 "duration": 4000
                             }
                         ]
