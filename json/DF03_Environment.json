@@ -1014,6 +1014,7 @@
         },
         {
             "id": "RawBar",
+            "descr": "Raw material cylinder to be machined",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -1023,7 +1024,15 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "WorkTable"
+            "placementRelTo": "WorkTable",
+            "metadata": {
+                "gripping": true 
+            },
+            "properties": {
+                "MotionType": "DYNAMIC", 
+                "isPickable": true,
+                "mass": 1 
+            }
         },
         {
             "id": "RawBar2",
