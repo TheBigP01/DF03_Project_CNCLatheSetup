@@ -1040,7 +1040,7 @@
             "type": "https://w3id.org/ontoeng/factory#SnapZoneActuator",
             "representations": [
                 {
-                    "file": "ChuckSnapZoneCube.glb",
+                    "file": "ChuckSnapZoneCubeBig.glb",
                     "unit": 1
                 }
             ],
