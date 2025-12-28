@@ -819,9 +819,14 @@
             },
             "statechart": {
                 "id": "stFootPedalLeft",
-                "initial": "UnToggledLeft",
+                "initial": "Waiting",
                 "states": {
-                    "UnToggledLeft": {
+                    "Waiting": {
+                        "on": { 
+                            "ENABLE_OPEN": "ReadyToOpen" 
+                        }
+                    },
+                    "ReadyToOpen": {
                         "on": {
                             "b-button_pressed": {
                                 "actions": [
@@ -831,38 +836,39 @@
                                     }
                                 ]
                             },
-                            "pick": "ToggledLeft"
+                            "pick": "OpeningJaws"
                         }
                     },
-                    "ToggledLeft": {
+                    "OpeningJaws": {
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_1",
-                                "position": [-80, 2, -1],
+                                "position": [-88, 3, -1],
                                 "rotation": [-0.523598588, 0, 1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_2",
-                                "position": [-80, -1, -1],
+                                "position": [-88, -1, -1],
                                 "rotation": [-0.523598588, -3.14159153, -1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_3",
-                                "position": [-80, 0, 2],
+                                "position": [-88, 0, 3],
                                 "rotation": [1.570795765, -1.570795765, 0],
                                 "duration": 4000
                             },
                             {
                                 "action": "sendEvent",
-                                "target": "UnToggledRight",
+                                "target": "ENABLE_CLOSE",
                                 "targetStatechart": "stFootPedalRight"
                             }
-                        ]
+                        ],
+                        "always": "Waiting"
                     }
                 }
             }
@@ -887,9 +893,9 @@
             },
             "statechart": {
                 "id": "stFootPedalRight",
-                "initial": "UnToggledRight",
+                "initial": "ReadyToClose",
                 "states": {
-                    "UnToggledRight": {
+                    "ReadyToClose": {
                         "on": {
                             "b-button_pressed": {
                                 "actions": [
@@ -899,38 +905,44 @@
                                     }
                                 ]
                             },
-                            "pick": "ToggledRight"
+                            "pick": "ClosingJaws"
                         }
                     },
-                    "ToggledRight": {
+                    "ClosingJaws": {
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_1",
-                                "position": [-80, 8, -4],
+                                "position": [-88, 8, -5],
                                 "rotation": [-0.523598588, 0, 1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_2",
-                                "position": [-80, -8, -6],
+                                "position": [-88, -8, -6],
                                 "rotation": [-0.523598588, -3.14159153, -1.570795765],
                                 "duration": 4000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_3",
-                                "position": [-80, 0, 10],
+                                "position": [-88, 0, 12],
                                 "rotation": [1.570795765, -1.570795765, 0],
                                 "duration": 4000
                             },
                             {
                                 "action": "sendEvent",
-                                "target": "UnToggledLeft",
+                                "target": "ENABLE_OPEN",
                                 "targetStatechart": "stFootPedalLeft"
                             }
-                        ]
+                        ],
+                        "always": "Waiting"
+                    },
+                    "Waiting": {
+                        "on": { 
+                            "ENABLE_CLOSE": "ReadyToClose" 
+                        }
                     }
                 }
             }
