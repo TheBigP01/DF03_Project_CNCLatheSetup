@@ -1031,7 +1031,6 @@
             "properties": {
                 "MotionType": "DYNAMIC", 
                 "isPickable": true,
-                "isTrigger": true,
                 "mass": 1 
             }
         },
@@ -1050,7 +1049,6 @@
             "placementRelTo": "LatheBody",
             "properties": {
                 "isPickable": true,
-                "isTrigger": true,
                 "SnapPosition": [0, 0, 0], 
                 "SnapRotation": [0, 0, 1.570795765] 
             },
