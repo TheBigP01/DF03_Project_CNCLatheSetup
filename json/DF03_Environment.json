@@ -844,23 +844,23 @@
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_1",
-                                "position": [-88, 3, -1],
+                                "position": [-85, 3, -1],
                                 "rotation": [-0.523598588, 0, 1.570795765],
-                                "duration": 4000
+                                "duration": 2000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_2",
-                                "position": [-88, -1, -1],
+                                "position": [-85, -1, -1],
                                 "rotation": [-0.523598588, -3.14159153, -1.570795765],
-                                "duration": 4000
+                                "duration": 2000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_3",
-                                "position": [-88, 0, 3],
+                                "position": [-85, 0, 3],
                                 "rotation": [1.570795765, -1.570795765, 0],
-                                "duration": 4000
+                                "duration": 2000
                             },
                             {
                                 "action": "sendEvent",
@@ -913,23 +913,23 @@
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_1",
-                                "position": [-88, 8, -5],
+                                "position": [-85, 8, -5],
                                 "rotation": [-0.523598588, 0, 1.570795765],
-                                "duration": 4000
+                                "duration": 10
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_2",
-                                "position": [-88, -8, -6],
+                                "position": [-85, -8, -6],
                                 "rotation": [-0.523598588, -3.14159153, -1.570795765],
-                                "duration": 4000
+                                "duration": 10
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.Jaw_3",
-                                "position": [-88, 0, 12],
+                                "position": [-85, 0, 12],
                                 "rotation": [1.570795765, -1.570795765, 0],
-                                "duration": 4000
+                                "duration": 10
                             },
                             {
                                 "action": "sendEvent",
