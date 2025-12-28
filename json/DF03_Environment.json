@@ -1060,9 +1060,12 @@
                         "on": { 
                             "deactivate": "inactive",
                             "activate": "active"
-                            },
+                            }
+                    },
                     "inactive": {
-                        "on": { "activate": "active" }
+                        "on": { 
+                            "activate": "active" 
+                        }
                     }
                 }
             }
