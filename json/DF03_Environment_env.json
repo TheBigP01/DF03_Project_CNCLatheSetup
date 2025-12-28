@@ -38,5 +38,14 @@
         "skyboxTexture": "textures/studio.env",
         "backgroundColor": [ 0.2, 0.3, 0.5 ],
         "groundTexture": ""
-    }
+    },
+	"physics": {
+		"engine": "havok",
+		"gravity": [
+			0,
+			-9.81,
+			0
+		],
+		"viewer": false
+	}
 }
