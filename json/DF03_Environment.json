@@ -811,7 +811,53 @@
             ],
             "position": [0, 50, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "LatheBody"
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stFootPedalLeft",
+                "initial": "UnToggled",
+                "states": {
+                    "UnToggled": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Toggled"
+                        }
+                    },
+                    "Toggled": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_1",
+                                "position": [-50, 2, -1],
+                                "duration": 4000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_2",
+                                "position": [-50, -1, -1],
+                                "duration": 4000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_3",
+                                "position": [-50, 0, 2],
+                                "duration": 4000
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "FootPedalRight",
@@ -825,7 +871,53 @@
             ],
             "position": [0, 50, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "LatheBody"
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stFootPedalRight",
+                "initial": "UnToggled",
+                "states": {
+                    "UnToggled": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Toggled"
+                        }
+                    },
+                    "Toggled": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_1",
+                                "position": [-50, 5, -3],
+                                "duration": 4000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_2",
+                                "position": [-50, -5, -4],
+                                "duration": 4000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_3",
+                                "position": [-50, 0, 7],
+                                "duration": 4000
+                            }
+                        ]
+                    }
+                }
+            }
         },
         {
             "id": "WorkTable",
