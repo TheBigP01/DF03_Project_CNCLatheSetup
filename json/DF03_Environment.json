@@ -1031,21 +1031,41 @@
             "properties": {
                 "MotionType": "DYNAMIC", 
                 "isPickable": true,
+                "isTrigger": true,
                 "mass": 1 
             }
         },
         {
-            "id": "RawBar2",
+            "id": "ChuckSnapZone",
+            "descr": "Target zone to snap the workpiece into the chuck",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
-                    "file": "RawBar2.glb",
+                    "file": "ChuckSnapZoneCube.glb",
                     "unit": 1
                 }
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "LatheBody"
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "isPickable": true,
+                "isTrigger": true,
+                "SnapPosition": [0, 0, 0], 
+                "SnapRotation": [0, 0, 1.570795765] 
+            },
+            "statechart": {
+                "id": "stSnapZone",
+                "initial": "inactive",
+                "states": {
+                    "inactive": {
+                        "on": { "activate": "active" }
+                    },
+                    "active": {
+                        "on": { "deactivate": "inactive" }
+                    }
+                }
+            }
         }
     ]
 }
