@@ -1038,7 +1038,7 @@
         {
             "id": "ChuckSnapZone",
             "descr": "Target zone to snap the workpiece into the chuck",
-            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#SnapZoneActuator",
             "representations": [
                 {
                     "file": "ChuckSnapZoneCube.glb",
