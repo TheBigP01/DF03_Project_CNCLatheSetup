@@ -1054,20 +1054,14 @@
                 "SnapRotation": [0, 0, 0] 
             },
             "statechart": {
-                "id": "stSnapZone",
-                "initial": "active", 
+               "id": "stSnapZone",
+                "initial": "inactive",
                 "states": {
+                    "inactive": {
+                        "on": { "activate": "active" }
+                    },
                     "active": {
-                        "on": { 
-                            "b-button_pressed": { 
-                                "actions": [
-                                    { "type": "AttractTo",
-                                        "target": "ChuckSnapZone", 
-                                        "mesh": "RawBar" 
-                                    }
-                                ] 
-                            }
-                        }
+                        "on": { "deactivate": "inactive" }
                     }
                 }
             }
