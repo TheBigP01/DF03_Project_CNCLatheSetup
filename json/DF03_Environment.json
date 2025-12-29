@@ -32,7 +32,8 @@
         "WorkTable",
         "RawBar",
         "RawBar2",
-        "ChuckSnapZone"
+        "ChuckSnapZone",
+        "FinishedPart"
     ],
     "assets": [
         {
@@ -789,6 +790,11 @@
                                 "action": "setRepresentation", 
                                 "target": "HmiDisplay", 
                                 "reprref": "ScreenHMI_Loading.glb" 
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "RUN",
+                                "targetStatechart": "stFinishedPart"
                             }
                         ],
                         "on": { "PART_CREATED": "DONE" }
@@ -1172,6 +1178,107 @@
                     }
                 }
             }
+        },
+        {
+            "id": "FinishedPart",
+            "descr": "Machined Part",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FakeFinishedPart.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, -5000, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "isPickable": true,
+                "isTrigger" : true,
+                "SnapPosition": [0, 0, 0], 
+                "SnapRotation": [0, 0, 0] 
+            },
+            "statechart": {
+               "id": "stFinishedPart",
+                "initial": "WaitingCommmand",
+                "states": {
+                    "WaitingComment": {
+                        "on": { "RUN": "Running" }
+                    },
+                    "Running": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BaseBlocTurret-1",
+                                "position": [155, 108.937, 70.98],
+                                "rotation": [0, -1.570795765, 0],
+                                "duration": 500
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BlockTurret-1",
+                                "position": [125, -80, 10],
+                                "rotation": [0, 0, 0],
+                                "duration": 500
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.SL30_Turret",
+                                "position": [225, 94, 620],
+                                "rotation": [0, 0, -0.57595844],
+                                "duration": 500
+                            }
+                        ],
+                        "after": {
+                            "20000": "Finished"
+                        }
+                    },
+                    "Finished": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BaseBlocTurret-1",
+                                "position": [189.4, 108.937, 70.98],
+                                "rotation": [0, -1.570795765, 0],
+                                "duration": 3000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BlockTurret-1",
+                                "position": [0, 670, 10],
+                                "rotation": [0, 0, 0],
+                                "duration": 3000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.SL30_Turret",
+                                "position": [225, 94, 620],
+                                "rotation": [0, 0, 0],
+                                "duration": 3000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "RawBar2",
+                                "position": [0, -5000, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "FinishedPart",
+                                "position": [0, 0, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PART_CREATED",
+                                "targetStatechart": "stHmiDisplay"
+                            }
+                        ]
+                    }
+                }
+            }  
         }
     ]
 }
