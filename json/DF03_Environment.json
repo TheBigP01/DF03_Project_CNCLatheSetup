@@ -709,7 +709,7 @@
                     "unit": 1 
                 }
             ],
-            "position": [0, 0, 1],
+            "position": [0, 0, 3],
             "placementRelTo": "LatheBody",
             "properties": {
                 "MotionType": "ANIMATED",
