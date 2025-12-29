@@ -1029,7 +1029,6 @@
             "placementRelTo": "WorkTable",
             "properties": {
                 "MotionType": "ANIMATED",
-                "isTrigger" : true,
                 "isPickable": true
                  },
             "statechart": {
