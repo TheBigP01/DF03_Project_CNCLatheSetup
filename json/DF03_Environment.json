@@ -1331,7 +1331,7 @@
                         "entry": [
                             {
                                 "action": "playAnimation",
-                                "target": "MachiningSparks",
+                                "target": "MachiningSparks.Triangle.006",
                                 "loop": true,
                                 "speed": 1.5
                             }
@@ -1342,7 +1342,7 @@
                          "entry": [
                             { 
                                 "action": "stopAnimation", 
-                                "target": "MachiningSparks" 
+                                "target": "MachiningSparks.Triangle.006" 
                             },
                             {
                                 "action": "moveTo",
