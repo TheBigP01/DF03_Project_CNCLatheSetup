@@ -32,7 +32,8 @@
         "WorkTable",
         "RawBar",
         "RawBar2",
-        "ChuckSnapZone"
+        "ChuckSensor",
+        "ChuckReceiver"
     ],
     "assets": [
         {
@@ -1037,15 +1038,7 @@
                 "states": {
                     "OnTable": {
                         "on": {
-                            "b-button_pressed": {
-                                "actions": [
-                                    {
-                                        "type": "xstate.raise",
-                                        "event": "pick"
-                                    }
-                                ]
-                            },
-                            "pick": "Swap"
+                            "SwappingEvent" : "Swap"
                         }
                     },
                     "Swap": {
@@ -1065,9 +1058,18 @@
                                 "duration": 1
                             },
                             {
-                                "action": "sendEvent",
-                                "target": "RAWBARPLACED",
-                                "targetStatechart": "stChuckSnapZone"
+                                "action": "moveTo",
+                                "target": "ChuckSensor",
+                                "position": [0, -5000, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "ChuckReceiver",
+                                "position": [0, -5000, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
                             }
                         ]    
                     }
@@ -1089,12 +1091,12 @@
             "placementRelTo": "LatheBody"
         },
         {
-            "id": "ChuckSnapZone",
-            "descr": "Target zone to snap the workpiece into the chuck",
-            "type": "https://w3id.org/ontoeng/factory#SnapZoneActuator",
+            "id": "ChuckSensor",
+            "descr": "Phantom zone that detects when the RawBar enters the chuck",
+            "type": "https://w3id.org/ontoeng/factory#SensorBarrier",
             "representations": [
                 {
-                    "file": "ChuckSnapZoneCube.glb",
+                    "file": "ChuckSnapZoneCubeBig.glb",
                     "unit": 1
                 }
             ],
@@ -1102,22 +1104,43 @@
             "rotation": [0, 0, 0],
             "placementRelTo": "LatheBody",
             "properties": {
-                "isPickable": true,
-                "isTrigger" : true,
-                "SnapPosition": [0, 0, 0], 
-                "SnapRotation": [0, 0, 0] 
+                "isPickable": false
             },
             "statechart": {
-               "id": "stChuckSnapZone",
-                "initial": "active",
+               "id": "stChuckSensor",
+                "initial": "Idle",
                 "states": {
-                    "active": {
-                        "on": { "RAWBARPLACED": "inactive" }
+                    "Idle": {
+                        "meta": { "type": "sensorIdle" },
+                        "on": { "DETECTED": "Detecting" }
                     },
-                    "inactive": {
-                        "on": { "activate": "active" }
+                    "Detecting": {
+                        "meta": { "type": "sensorDetecting" },
+                        "on": { "CLEARED": "Idle" },
+                        "entry": [
+                            {
+                                "action": "sendEvent",
+                                "target": "SwappingEvent",
+                                "targetStatechart": "stRawBar"
+                            }
+                        ]
                     }
                 }
+            }
+        },
+        {
+            "id": "ChuckReceiver",
+            "descr": "Invisible point to define the sensor volume",
+            "type": "https://w3id.org/ontoeng/factory#Receiver",
+            "representations": [
+                { "file": "ChuckSnapZoneCube.glb",
+                    "unit": 1 
+                }
+            ],
+            "position": [0, 0, 0], 
+            "placementRelTo": "ChuckSensor",
+            "properties": { 
+                "isPickable": false
             }
         }
     ]
