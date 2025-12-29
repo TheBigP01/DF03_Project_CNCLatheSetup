@@ -721,19 +721,7 @@
                 "initial": "Off",
                 "states": {
                     "Off": {
-                        "on": { "POWER_ON": "Booting" }
-                    },
-                    "Booting": {
-                        "entry": [
-                            { 
-                                "action": "setRepresentation", 
-                                "target": "HmiDisplay", 
-                                "reprref": "ScreenHMI_Boot.glb" 
-                            }
-                        ],
-                        "after": {
-                            "5000": "WaitingForEStop"
-                        }
+                        "on": { "POWER_ON": "WaitingForEStop" }
                     },
                     "WaitingForEStop": {
                         "entry": [
@@ -746,11 +734,71 @@
                         "on": { "ESTOP_RELEASED": "Ready" }
                     },
                     "Ready": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Task"
+                        },
+                        "entry": [
+                            {
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Ready.glb" 
+                            }
+                        ]
+                    },
+                    "Task": { 
                         "entry": [
                             { 
                                 "action": "setRepresentation", 
                                 "target": "HmiDisplay", 
-                                "reprref": "ScreenHMI_Ready.glb" 
+                                "reprref": "ScreenHMI_Task.glb" 
+                            }
+                        ],
+                        "on": { "DOOR_CLOSED": "GO" }
+                    },
+                    "GO": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Booting"
+                        },
+                        "entry": [
+                            {
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Go.glb" 
+                            }
+                        ]
+                    },
+                    "Booting": { 
+                        "entry": [
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Boot.glb" 
+                            }
+                        ],
+                        "on": { "PART_CREATED": "DONE" }
+                    },
+                    "DONE": { 
+                        "entry": [
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Done.glb" 
                             }
                         ]
                     }
@@ -818,6 +866,11 @@
                                 "target": "Door",
                                 "position": [0, 0, 0],
                                 "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "DOOR_CLOSED",
+                                "targetStatechart": "stHmiDisplay"
                             }
                         ]
                     }
