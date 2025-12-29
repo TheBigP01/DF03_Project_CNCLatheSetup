@@ -3,5 +3,17 @@
         "UnitOfMeasureScale": 0.001,
         "RepoAnim": ""
     },
-    "nodes": [ ]
+    "nodes": [
+        {
+            "id": "MachiningSparks",
+            "animations": [
+                {
+                    "id": "SparksAnimation",
+                    "group": "Losange.001Action",
+                    "loop": true,
+                    "speed": 1.5
+                }
+            ]
+        }
+    ]
 }
