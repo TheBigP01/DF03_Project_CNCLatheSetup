@@ -1312,40 +1312,46 @@
                 "initial": "Hidden",
                 "states": {
                     "Hidden": {
-                        "on": {
-                            "START_SPARKS": "Visible"
-                        },
-                        "entry": [
-                            {
-                                "action": "moveTo",
-                                "target": "MachiningSparks.Triangle.006",
-                                "position": [0, -5000, 0],
-                                "duration": 1
-                            },
-                            {
-                                "action": "stopAnimation",
-                                "target": "MachiningSparks"
-                            }
-                        ]
+                        "on": { "START_SPARKS": "MovingUp" }
                     },
-                    "Visible": {
-                        "on": {
-                            "STOP_SPARKS": "Hidden"
-                        },
+                    "MovingUp": {
                         "entry": [
                             {
                                 "action": "moveTo",
                                 "target": "MachiningSparks",
-                                "position": [0, 0, 0],
-                                "duration": 1
-                            },
+                                "position": [0, 0, 0], 
+                                "duration": 10
+                            }
+                        ],
+                        "after": {
+                            "60": "PlayingSparks" 
+                        }
+                    },
+                    "PlayingSparks": {
+                        "entry": [
                             {
                                 "action": "playAnimation",
-                                "target": "MachiningSparks.Triangle.006",
+                                "target": "MachiningSparks",
                                 "loop": true,
                                 "speed": 1.5
                             }
-                        ]
+                        ],
+                        "on": { "STOP_SPARKS": "StoppingSparks" }
+                    },
+                    "StoppingSparks": {
+                         "entry": [
+                            { 
+                                "action": "stopAnimation", 
+                                "target": "MachiningSparks" 
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "MachiningSparks",
+                                "position": [0, -5000, 0], 
+                                "duration": 10
+                            }
+                        ],
+                        "always": "Hidden"
                     }
                 }
             }
