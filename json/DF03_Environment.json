@@ -1059,8 +1059,14 @@
                 "states": {
                     "active": {
                         "on": { 
-                            "activate": "active",
-                            "deactivate": "active" 
+                            "b-button_pressed": { 
+                                "actions": [
+                                    { "type": "AttractTo", 
+                                        "target": "ChuckSnapZone", 
+                                        "mesh": "RawBar" 
+                                    }
+                                ] 
+                            }
                         }
                     }
                 }
