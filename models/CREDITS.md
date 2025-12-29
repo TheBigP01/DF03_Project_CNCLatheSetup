@@ -96,11 +96,6 @@ Model Name: Power button icon on flat shape
 Author: vect ara
 Link: https://www.vecteezy.com/png/60380339-power-button-icon-on-flat-shape
 
-Model Name: Getting back to the start again after hard work, Loading sign on computer screen
-Author: BNMK 0819
-Link: https://www.vecteezy.com/photo/4836372-getting-back-to-the-start-again-after-hard-work-loading-sign-on-computer-screen
-
 Model Name:
 Author:
 Link: 
-
