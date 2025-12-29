@@ -1061,7 +1061,7 @@
                         "on": { 
                             "b-button_pressed": { 
                                 "actions": [
-                                    { "type": "AttractTo", 
+                                    { "type": "AttractTo",
                                         "target": "ChuckSnapZone", 
                                         "mesh": "RawBar" 
                                     }
