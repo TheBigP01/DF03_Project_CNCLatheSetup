@@ -845,6 +845,11 @@
                                 "target": "Door",
                                 "position": [-500, 0, 0],
                                 "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "DOOR_CLOSED",
+                                "targetStatechart": "stHmiDisplay"
                             }
                         ]
                     },
@@ -866,11 +871,6 @@
                                 "target": "Door",
                                 "position": [0, 0, 0],
                                 "duration": 2000
-                            },
-                            {
-                                "action": "sendEvent",
-                                "target": "DOOR_CLOSED",
-                                "targetStatechart": "stHmiDisplay"
                             }
                         ]
                     }
