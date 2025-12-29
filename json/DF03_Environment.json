@@ -1095,7 +1095,7 @@
             "type": "https://w3id.org/ontoeng/factory#SensorBarrier",
             "representations": [
                 {
-                    "file": "ChuckSnapZoneCubeBig.glb",
+                    "file": "ChuckSensor.glb",
                     "unit": 1
                 }
             ],
@@ -1132,7 +1132,7 @@
             "descr": "Invisible point to define the sensor volume",
             "type": "https://w3id.org/ontoeng/factory#Receiver",
             "representations": [
-                { "file": "ChuckSnapZoneCube.glb",
+                { "file": "ChuckReceiver.glb",
                     "unit": 1 
                 }
             ],
