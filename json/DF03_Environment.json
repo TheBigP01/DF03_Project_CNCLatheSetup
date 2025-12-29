@@ -1318,7 +1318,7 @@
                         "entry": [
                             {
                                 "action": "moveTo",
-                                "target": "MachiningSparks..Triangle.006",
+                                "target": "MachiningSparks.Triangle.006",
                                 "position": [0, -5000, 0],
                                 "duration": 1
                             },
