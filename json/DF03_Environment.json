@@ -1321,6 +1321,10 @@
                                 "target": "MachiningSparks",
                                 "position": [0, -5000, 0],
                                 "duration": 1
+                            },
+                            {
+                                "action": "stopAnimation",
+                                "target": "MachiningSparks"
                             }
                         ]
                     },
@@ -1334,6 +1338,12 @@
                                 "target": "MachiningSparks",
                                 "position": [0, 0, 0],
                                 "duration": 1
+                            },
+                            {
+                                "action": "playAnimation",
+                                "target": "MachiningSparks",
+                                "loop": true,
+                                "speed": 1.5
                             }
                         ]
                     }
