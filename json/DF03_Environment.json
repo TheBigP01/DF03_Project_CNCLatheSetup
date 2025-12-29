@@ -773,7 +773,7 @@
                                     }
                                 ]
                             },
-                            "pick": "Booting"
+                            "pick": "Loading"
                         },
                         "entry": [
                             {
@@ -783,12 +783,12 @@
                             }
                         ]
                     },
-                    "Booting": { 
+                    "Loading": { 
                         "entry": [
                             { 
                                 "action": "setRepresentation", 
                                 "target": "HmiDisplay", 
-                                "reprref": "ScreenHMI_Boot.glb" 
+                                "reprref": "ScreenHMI_Loading.glb" 
                             }
                         ],
                         "on": { "PART_CREATED": "DONE" }
