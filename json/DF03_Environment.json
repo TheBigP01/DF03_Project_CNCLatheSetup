@@ -1338,8 +1338,7 @@
                             {
                                 "action": "playAnimation",
                                 "target": "MachiningSparks.Triangle.006",
-                                "animref": "SparksAnimation",
-                                "speed": 1.5
+                                "animref": "SparksAnimation"
                             }
                         ],
                         "on": { "STOP_SPARKS": "StoppingSparks" }
