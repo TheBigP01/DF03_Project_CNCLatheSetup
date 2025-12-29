@@ -1245,7 +1245,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.BlockTurret-1",
-                                "position": [0, 670, 10],
+                                "position": [0, 67, 10],
                                 "rotation": [0, 0, 0],
                                 "duration": 3000
                             },
