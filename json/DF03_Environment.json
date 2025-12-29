@@ -31,9 +31,7 @@
         "FootPedalRight",
         "WorkTable",
         "RawBar",
-        "RawBar2",
-        "ChuckSensor",
-        "ChuckReceiver"
+        "ChuckSnapZone"
     ],
     "assets": [
         {
@@ -1016,7 +1014,7 @@
         },
         {
             "id": "RawBar",
-            "descr": "Raw material cylinder to be grapped",
+            "descr": "Raw material cylinder to be machined",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -1027,119 +1025,42 @@
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
             "placementRelTo": "WorkTable",
+            "metadata": {
+                "gripping": true 
+            },
             "properties": {
-                "MotionType": "ANIMATED",
-                "isPickable": true
-                 },
-            "statechart": {
-                "id": "stRawBar",
-                "initial": "OnTable",
-                "states": {
-                    "OnTable": {
-                        "on": {
-                            "SwappingEvent" : "Swap"
-                        }
-                    },
-                    "Swap": {
-                        "entry": [
-                            {
-                                "action": "moveTo",
-                                "target": "RawBar",
-                                "position": [0, -5000, 0],
-                                "rotation": [0, 0, 0],
-                                "duration": 1
-                            },
-                            {
-                                "action": "moveTo",
-                                "target": "RawBar2",
-                                "position": [0, 0, 0],
-                                "rotation": [0, 0, 0],
-                                "duration": 1
-                            },
-                            {
-                                "action": "moveTo",
-                                "target": "ChuckSensor",
-                                "position": [0, -5000, 0],
-                                "rotation": [0, 0, 0],
-                                "duration": 1
-                            },
-                            {
-                                "action": "moveTo",
-                                "target": "ChuckReceiver",
-                                "position": [0, -5000, 0],
-                                "rotation": [0, 0, 0],
-                                "duration": 1
-                            }
-                        ]    
-                    }
-                }
+                "MotionType": "DYNAMIC", 
+                "isPickable": true,
+                "mass": 1 
             }
         },
         {
-            "id": "RawBar2",
-            "descr": "Raw material cylinder to be machined",
-            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "id": "ChuckSnapZone",
+            "type": "https://w3id.org/ontoeng/factory#SnapZoneActuator",
             "representations": [
                 {
-                    "file": "RawBar2.glb",
-                    "unit": 1
-                }
-            ],
-            "position": [0, -5000, 0],
-            "rotation": [0, 0, 0],
-            "placementRelTo": "LatheBody"
-        },
-        {
-            "id": "ChuckSensor",
-            "descr": "Phantom zone that detects when the RawBar enters the chuck",
-            "type": "https://w3id.org/ontoeng/factory#SensorBarrier",
-            "representations": [
-                {
-                    "file": "ChuckSensor.glb",
+                    "file": "ChuckSnapZoneCubeBig.glb",
                     "unit": 1
                 }
             ],
             "position": [0, 0, 0],
-            "rotation": [0, 0, 0],
             "placementRelTo": "LatheBody",
             "properties": {
-                "isPickable": false
+                "isPickable": true,
+                "SnapPosition": [0, 0, 0], 
+                "SnapRotation": [0, 0, 0] 
             },
             "statechart": {
-               "id": "stChuckSensor",
-                "initial": "Idle",
+                "id": "stSnapZone",
+                "initial": "active", 
                 "states": {
-                    "Idle": {
-                        "meta": { "type": "sensorIdle" },
-                        "on": { "DETECTED": "Detecting" }
-                    },
-                    "Detecting": {
-                        "meta": { "type": "sensorDetecting" },
-                        "on": { "CLEARED": "Idle" },
-                        "entry": [
-                            {
-                                "action": "sendEvent",
-                                "target": "SwappingEvent",
-                                "targetStatechart": "stRawBar"
-                            }
-                        ]
+                    "active": {
+                        "on": { 
+                            "activate": "active",
+                            "deactivate": "active" 
+                        }
                     }
                 }
-            }
-        },
-        {
-            "id": "ChuckReceiver",
-            "descr": "Invisible point to define the sensor volume",
-            "type": "https://w3id.org/ontoeng/factory#Receiver",
-            "representations": [
-                { "file": "ChuckReceiver.glb",
-                    "unit": 1 
-                }
-            ],
-            "position": [0, 0, 0], 
-            "placementRelTo": "ChuckSensor",
-            "properties": { 
-                "isPickable": false
             }
         }
     ]
