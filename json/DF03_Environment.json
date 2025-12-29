@@ -1055,13 +1055,13 @@
             },
             "statechart": {
                 "id": "stSnapZone",
-                "initial": "inactive",
+                "initial": "active", 
                 "states": {
-                    "inactive": {
-                        "on": { "activate": "active" }
-                    },
                     "active": {
-                        "on": { "deactivate": "inactive" }
+                        "on": { 
+                            "activate": "active",
+                            "deactivate": "active" 
+                        }
                     }
                 }
             }
