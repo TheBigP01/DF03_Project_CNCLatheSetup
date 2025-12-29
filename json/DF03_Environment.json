@@ -1133,7 +1133,7 @@
             "descr": "Invisible point to define the sensor volume",
             "type": "https://w3id.org/ontoeng/factory#Receiver",
             "representations": [
-                { "file": "ChuckSnapZoneCubeBig.glb",
+                { "file": "ChuckSnapZoneCube.glb",
                     "unit": 1 
                 }
             ],
