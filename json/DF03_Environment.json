@@ -1212,25 +1212,25 @@
                                 "target": "LatheBody.BaseBlocTurret-1",
                                 "position": [1550, 1089.37, 709.8],
                                 "rotation": [0, -1.570795765, 0],
-                                "duration": 6000
+                                "duration": 1000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.BlockTurret-1",
                                 "position": [125, -80, 10],
                                 "rotation": [0, 0, 0],
-                                "duration": 6000
+                                "duration": 1000
                             },
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.SL30_Turret",
                                 "position": [225, 94, 620],
                                 "rotation": [0, 0, -0.57595844],
-                                "duration": 6000
+                                "duration": 1000
                             }
                         ],
                         "after": {
-                            "20000": "Finished"
+                            "15000": "Finished"
                         }
                     },
                     "Finished": {
