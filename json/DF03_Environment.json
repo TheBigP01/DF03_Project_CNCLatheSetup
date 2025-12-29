@@ -1200,9 +1200,9 @@
             },
             "statechart": {
                "id": "stFinishedPart",
-                "initial": "WaitingCommmand",
+                "initial": "WaitingCommand",
                 "states": {
-                    "WaitingComment": {
+                    "WaitingCommand": {
                         "on": { "RUN": "Running" }
                     },
                     "Running": {
