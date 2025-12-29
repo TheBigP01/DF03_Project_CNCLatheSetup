@@ -1233,6 +1233,12 @@
                                 "action": "sendEvent",
                                 "target": "START_SPARKS",
                                 "targetStatechart": "stSparks"
+                            },
+                            {
+                                "action": "playSound",
+                                "url": "Machining_Screech.mp3",
+                                "loop": false,
+                                "volume": 0.8
                             }
                         ],
                         "after": {
@@ -1332,7 +1338,7 @@
                             {
                                 "action": "playAnimation",
                                 "target": "MachiningSparks.Triangle.006",
-                                "loop": true,
+                                "animref": "SparksAnimation",
                                 "speed": 1.5
                             }
                         ],
