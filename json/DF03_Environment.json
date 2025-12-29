@@ -1025,7 +1025,7 @@
             ],
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "placementRelTo": "WorkTable"
+            "placementRelTo": "WorkTable",
             "properties": {
                 "MotionType": "ANIMATED",
                 "isTrigger" : true,
