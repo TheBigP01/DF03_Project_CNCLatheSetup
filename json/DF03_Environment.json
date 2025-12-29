@@ -1210,7 +1210,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.BaseBlocTurret-1",
-                                "position": [155, 108.937, 70.98],
+                                "position": [1550, 1089.37, 709.8],
                                 "rotation": [0, -1.570795765, 0],
                                 "duration": 500
                             },
@@ -1238,7 +1238,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.BaseBlocTurret-1",
-                                "position": [189.4, 108.937, 70.98],
+                                "position": [1894, 1089.37, 709.8],
                                 "rotation": [0, -1.570795765, 0],
                                 "duration": 3000
                             },
