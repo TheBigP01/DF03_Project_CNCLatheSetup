@@ -1237,7 +1237,7 @@
                             {
                                 "action": "playSound",
                                 "target": "LatheBody",
-                                "url": "Machining_Screech.mp3",
+                                "url": "Machining_Screech.wav",
                                 "loop": false,
                                 "volume": 0.8
                             }
