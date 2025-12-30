@@ -590,9 +590,8 @@
                             },
                             {
                                 "action": "playSound",
-                                "target": "LatheBody",
-                                "url": "LatheMachineOn.wav",
-                                "loop": false,
+                                "url": "MachineSound.mp3",
+                                "loop": true,
                                 "volume": 0.8
                             }
                         ]
