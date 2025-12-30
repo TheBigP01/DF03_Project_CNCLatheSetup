@@ -8,6 +8,9 @@
             "id": "MachiningSparks",
             "actions": [
                 {
+                    "event": { 
+                        "type": "INIT" 
+                    },
                     "id": "SparksAnimation",
                     "group": "Triangle.006Action",
                     "loop": true,
