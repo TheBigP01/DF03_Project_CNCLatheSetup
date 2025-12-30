@@ -587,6 +587,13 @@
                                 "position": [250, 1000, 1],
                                 "rotation": [0, 3.14159153, 0],
                                 "duration": 2000
+                            },
+                            {
+                                "action": "playSound",
+                                "target": "LatheBody",
+                                "url": "LatheMachineOn.wav",
+                                "loop": false,
+                                "volume": 0.8
                             }
                         ]
                     }
