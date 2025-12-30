@@ -6,7 +6,7 @@
     "nodes": [
         {
             "id": "MachiningSparks",
-            "animations": [
+            "animationGroups": [
                 {
                     "id": "SparksAnimation",
                     "group": "Triangle.006Action",
