@@ -7,3 +7,7 @@ Link: https://freesound.org/people/kwandalist/sounds/368695/
 Sound Name: Lathe Machine
 Author: SoundDesigner0101
 Link: https://freesound.org/people/SoundDesigner0101/sounds/765962/
+
+Sound Name: sound-machine2.mp3
+Author: zippi1
+Link: https://freesound.org/people/zippi1/sounds/17950/
