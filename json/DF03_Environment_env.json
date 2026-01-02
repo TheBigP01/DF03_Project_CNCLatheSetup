@@ -13,7 +13,15 @@
             "position": [ 500, 1600, 500 ],
             "rotation": [ 0, 0, 0 ],
             "speed": 512
-        }
+        },
+		{
+            "id": "camera.d3",
+            "type": "WebXRCamera",
+            "position": [ 0, 70, 0 ],
+            "rotation": [ 0, 0, 0 ],
+            "speed": 256
+        },
+		
     ],
     "lights":[
         {
