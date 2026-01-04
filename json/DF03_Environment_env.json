@@ -5,7 +5,7 @@
             "type": "FlyCamera",
             "position": [ 10750, 70, 7000 ],
             "rotation": [ 0, 0, 0 ],
-            "speed": 128
+            "speed": 64
         },
         {
             "id": "camera.d2",
