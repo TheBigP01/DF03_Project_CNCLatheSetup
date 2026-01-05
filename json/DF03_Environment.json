@@ -1342,7 +1342,7 @@
                         }
                     },
                     "PlayingSparks": {
-                        "initial": "SparkLeft",
+                        "initial": "SparkA",
                         "states": {
                             "SparkA": {
                                 "entry": [
