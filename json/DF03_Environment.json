@@ -1347,7 +1347,8 @@
                                 "action": "moveAdditive",
                                 "target": "MachiningSparks.Triangle.006",
                                 "rotation": [1.570795765, 1.570795765, 0],
-                                "loop": true
+                                "duration": 10000,
+                                "loop": "true"
                             }
                         ],
                         "on": { "STOP_SPARKS": "StoppingSparks" }
