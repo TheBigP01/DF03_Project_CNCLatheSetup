@@ -1346,8 +1346,8 @@
                             {
                                 "action": "moveAdditive",
                                 "target": "MachiningSparks.Triangle.006",
-                                "rotation": [1, 1, 0],
-                                "duration": 50,
+                                "rotation": [2, 2, 0],
+                                "duration": 200,
                                 "loop": true
                             }
                         ],
@@ -1365,7 +1365,7 @@
                                 "action": "moveAdditive",
                                 "target": "MachiningSparks.Triangle.006",
                                 "rotation": [0, 0, 0],
-                                "duration": 50,
+                                "duration": 100,
                                 "loop": false
                             }
                         ]
