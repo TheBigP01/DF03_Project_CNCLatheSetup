@@ -1342,15 +1342,31 @@
                         }
                     },
                     "PlayingSparks": {
-                        "entry": [
-                            {
-                                "action": "moveAdditive",
-                                "target": "MachiningSparks.Triangle.006",
-                                "rotation": [1.570795765, 1.570795765, 0],
-                                "duration": 1000,
-                                "loop": true
+                        "initial": "SparkLeft",
+                        "states": {
+                            "SparkA": {
+                                "entry": [
+                                    {
+                                        "action": "moveAdditive",
+                                        "target": "MachiningSparks.Triangle.006",
+                                        "rotation": [1.570795765, 1.570795765, 0],
+                                        "duration": 200
+                                    }
+                                ],
+                                "after": { "200": "SparkB" }
+                            },
+                            "SparkB": {
+                                "entry": [
+                                    {
+                                        "action": "moveAdditive",
+                                        "target": "MachiningSparks.Triangle.006",
+                                        "rotation": [1.570795765, 1.570795765, 0],
+                                        "duration": 200
+                                    }
+                                ],
+                                "after": { "200": "SparkA" }
                             }
-                        ],
+                        },
                         "on": { "STOP_SPARKS": "StoppingSparks" }
                     },
                     "StoppingSparks": {
