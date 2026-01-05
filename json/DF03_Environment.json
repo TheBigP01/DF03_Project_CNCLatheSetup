@@ -1350,16 +1350,16 @@
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
                                         "rotation": [1.570795765, 1.570795765, 0],
-                                        "duration": 50
+                                        "duration": 100
                                     },
                                     {
                                         "action": "moveTo",
                                         "target": "MachiningSparks.Triangle.006",
                                         "position": [85, 114, 145], 
-                                        "duration": 50
+                                        "duration": 100
                                     }
                                 ],
-                                "after": { "50": "SparkB" }
+                                "after": { "100": "SparkB" }
                             },
                             "SparkB": {
                                 "entry": [
@@ -1367,16 +1367,16 @@
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
                                         "rotation": [1.570795765, 1.570795765, 0],
-                                        "duration": 50
+                                        "duration": 100
                                     },
                                     {
                                         "action": "moveTo",
                                         "target": "MachiningSparks.Triangle.006",
                                         "position": [85, 114, 145], 
-                                        "duration": 50
+                                        "duration": 100
                                     }
                                 ],
-                                "after": { "50": "SparkA" }
+                                "after": { "100": "SparkA" }
                             }
                         },
                         "on": { "STOP_SPARKS": "StoppingSparks" }
