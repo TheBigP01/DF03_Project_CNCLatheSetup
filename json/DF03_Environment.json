@@ -1246,6 +1246,13 @@
                                 "url": "Machining_Screech.wav",
                                 "loop": false,
                                 "volume": 0.8
+                            },
+                            {
+                                "action": "moveAdditive",
+                                "target": "LatheBody.ThreeJawChuck",
+                                "rotation": [2, 0, 0],
+                                "duration": 200,
+                                "loop": true
                             }
                         ],
                         "after": {
@@ -1298,6 +1305,13 @@
                                 "action": "sendEvent",
                                 "target": "STOP_SPARKS",
                                 "targetStatechart": "stSparks"
+                            },
+                            {
+                                "action": "moveAdditive",
+                                "target": "LatheBody.ThreeJawChuck",
+                                "rotation": [2, 0, 0],
+                                "duration": 200,
+                                "loop": false
                             }
                         ]
                     }
