@@ -1349,6 +1349,7 @@
                                     {
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
+                                        "position": [-1, -1, -1],
                                         "rotation": [1.570795765, 1.570795765, 0],
                                         "duration": 50
                                     }
@@ -1360,6 +1361,7 @@
                                     {
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
+                                        "position": [-1, -1, -1],
                                         "rotation": [1.570795765, 1.570795765, 0],
                                         "duration": 50
                                     }
@@ -1371,13 +1373,6 @@
                     },
                     "StoppingSparks": {
                          "entry": [
-                            { 
-                                "action": "moveAdditive",
-                                "target": "MachiningSparks.Triangle.006",
-                                "rotation": [0, 0, 0],
-                                "duration": 1000,
-                                "loop": false
-                            },
                             {
                                 "action": "moveTo",
                                 "target": "MachiningSparks",
