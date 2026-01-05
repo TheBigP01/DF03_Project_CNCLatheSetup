@@ -1384,8 +1384,7 @@
                                 "position": [0, -5000, 0], 
                                 "duration": 10
                             }
-                        ],
-                        "always": "Hidden"
+                        ]
                     }
                 }
             }
