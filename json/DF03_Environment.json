@@ -1350,16 +1350,10 @@
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
                                         "rotation": [1.570795765, 1.570795765, 0],
-                                        "duration": 100
-                                    },
-                                    {
-                                        "action": "moveTo",
-                                        "target": "MachiningSparks.Triangle.006",
-                                        "position": [85, 114, 145], 
-                                        "duration": 100
+                                        "duration": 50
                                     }
                                 ],
-                                "after": { "100": "SparkB" }
+                                "after": { "50": "SparkB" }
                             },
                             "SparkB": {
                                 "entry": [
@@ -1367,16 +1361,10 @@
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
                                         "rotation": [1.570795765, 1.570795765, 0],
-                                        "duration": 100
-                                    },
-                                    {
-                                        "action": "moveTo",
-                                        "target": "MachiningSparks.Triangle.006",
-                                        "position": [85, 114, 145], 
-                                        "duration": 100
+                                        "duration": 50
                                     }
                                 ],
-                                "after": { "100": "SparkA" }
+                                "after": { "50": "SparkA" }
                             }
                         },
                         "on": { "STOP_SPARKS": "StoppingSparks" }
