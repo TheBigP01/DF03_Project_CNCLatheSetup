@@ -10,7 +10,7 @@
         {
             "id": "camera.d2",
             "type": "FreeCamera",
-            "position": [ 500, 1600, 500 ],
+            "position": [ 10750, 70, 7000 ],
             "rotation": [ 0, 0, 0 ],
             "speed": 512
         }
