@@ -1343,9 +1343,11 @@
                     "PlayingSparks": {
                         "entry": [
                             {
-                                "action": "playAnimation",
-                                "target": "MachiningSparks.Triangle.006",
-                                "animref": "SparksAnimation"
+                                "action": "moveAdditive",
+                                "target": "MachiningSparks",
+                                "rotation": [0, 2, 0],
+                                "duration": 1000,
+                                "loop": true
                             }
                         ],
                         "on": { "STOP_SPARKS": "StoppingSparks" }
@@ -1353,8 +1355,11 @@
                     "StoppingSparks": {
                          "entry": [
                             { 
-                                "action": "stopAnimation", 
-                                "target": "MachiningSparks.Triangle.006" 
+                                "action": "moveAdditive",
+                                "target": "MachiningSparks",
+                                "rotation": [0, 0, 0],
+                                "duration": 1000,
+                                "loop": false
                             },
                             {
                                 "action": "moveTo",
