@@ -1323,8 +1323,22 @@
             },
             "statechart": {
                 "id": "stSparks",
-                "initial": "Hidden",
+                "initial": "ResetAnimation",
                 "states": {
+                     "ResetAnimation": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "MachiningSparks.Triangle.006",
+                                "position": [85, 114, 145],
+                                "rotation": [1.570795765, 1.570795765, 0],
+                                "duration": 100
+                            }
+                            ],
+                        "after": {
+                            "1000": "Hidden"
+                        }
+                    },
                     "Hidden": {
                         "on": { "START_SPARKS": "MovingUp" }
                     },
