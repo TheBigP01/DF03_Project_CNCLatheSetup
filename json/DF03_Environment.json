@@ -938,7 +938,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "LatheBody.ThreeJawChuck",
-                                "position": [100, 100, 100],
+                                "position": [568.78, 1110.3, 1412.5],
                                 "rotation": [1.132538511, 0, -3.14159153],
                                 "duration": 10
                             }
