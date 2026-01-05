@@ -1350,7 +1350,7 @@
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
                                         "position": [0, 0, 0],
-                                        "rotation": [1.570795765, 1.570795765, 0],
+                                        "rotation": [0, 1.570795765, 0],
                                         "duration": 50
                                     }
                                 ],
@@ -1362,7 +1362,7 @@
                                         "action": "moveAdditive",
                                         "target": "MachiningSparks.Triangle.006",
                                         "position": [0, 0, 0],
-                                        "rotation": [1.570795765, 1.570795765, 0],
+                                        "rotation": [1.570795765, 0, 0],
                                         "duration": 50
                                     }
                                 ],
