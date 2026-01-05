@@ -1342,33 +1342,15 @@
                         }
                     },
                     "PlayingSparks": {
-                        "initial": "SparkA",
-                        "states": {
-                            "SparkA": {
-                                "entry": [
-                                    {
-                                        "action": "moveAdditive",
-                                        "target": "MachiningSparks.Triangle.006",
-                                        "position": [0, 0, 0],
-                                        "rotation": [0, 1.570795765, 0],
-                                        "duration": 50
-                                    }
-                                ],
-                                "after": { "50": "SparkB" }
-                            },
-                            "SparkB": {
-                                "entry": [
-                                    {
-                                        "action": "moveAdditive",
-                                        "target": "MachiningSparks.Triangle.006",
-                                        "position": [0, 0, 0],
-                                        "rotation": [1.570795765, 0, 0],
-                                        "duration": 50
-                                    }
-                                ],
-                                "after": { "50": "SparkA" }
+                        "entry": [
+                            {
+                                "action": "moveAdditive",
+                                "target": "MachiningSparks.Triangle.006",
+                                "rotation": [1, 1, 0],
+                                "duration": 50,
+                                "loop": true
                             }
-                        },
+                        ],
                         "on": { "STOP_SPARKS": "StoppingSparks" }
                     },
                     "StoppingSparks": {
@@ -1378,6 +1360,13 @@
                                 "target": "MachiningSparks",
                                 "position": [0, -5000, 0], 
                                 "duration": 10
+                            },
+                            {
+                                "action": "moveAdditive",
+                                "target": "MachiningSparks.Triangle.006",
+                                "rotation": [0, 0, 0],
+                                "duration": 50,
+                                "loop": false
                             }
                         ]
                     }
