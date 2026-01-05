@@ -1330,7 +1330,7 @@
                             {
                                 "action": "moveTo",
                                 "target": "MachiningSparks.Triangle.006",
-                                "position": [85, 114, 145],
+                                "position": [463.1410256, 915.2112676, 1161.60221],
                                 "rotation": [1.570795765, 1.570795765, 0],
                                 "duration": 100
                             }
